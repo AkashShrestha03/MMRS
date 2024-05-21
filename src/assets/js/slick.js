@@ -3,7 +3,7 @@
   "function" == typeof define && define.amd
     ? define(["jquery"], i)
     : "undefined" != typeof exports
-    ? (module.exports = i(("jquery")))
+    ? (module.exports = i(require("jquery")))
     : i(jQuery);
 })(function (i) {
   "use strict";

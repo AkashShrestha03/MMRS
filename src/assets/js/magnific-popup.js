@@ -5,7 +5,7 @@
   "function" == typeof define && define.amd
     ? define(["jquery"], a)
     : "object" == typeof exports
-    ? ("jquery")
+    ? require("jquery")
     : window.jQuery || window.Zepto;
 })(function (a) {
   var b,

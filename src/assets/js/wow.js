@@ -18,7 +18,7 @@
         return -1;
       };
   (b = (function () {
-    function a () {}
+    function a() {}
     return (
       (a.prototype.extend = function (a, b) {
         var c, d;
