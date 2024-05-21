@@ -45,7 +45,7 @@
             (function (e, t) {
               if (e) {
                 if ("string" == typeof e) return n(e, t);
-                var r = Object.prototype.toString.call(e).slice(8, -1);
+                var r = Object.toString.call(e).slice(8, -1);
                 return (
                   "Object" === r && e.constructor && (r = e.constructor.name),
                   "Map" === r || "Set" === r
@@ -226,7 +226,7 @@
           return (
             "IntersectionObserver" in window &&
             "IntersectionObserverEntry" in window &&
-            "intersectionRatio" in window.IntersectionObserverEntry.prototype
+            "intersectionRatio" in window.IntersectionObserverEntry
           );
         }
         e.exports = function () {

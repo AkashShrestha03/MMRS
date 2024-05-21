@@ -527,9 +527,9 @@
     },
     V = {
       find: (t, e = document.documentElement) =>
-        [].concat(...Element.prototype.querySelectorAll.call(e, t)),
+        [].concat(...Element.querySelectorAll.call(e, t)),
       findOne: (t, e = document.documentElement) =>
-        Element.prototype.querySelector.call(e, t),
+        Element.querySelector.call(e, t),
       children: (t, e) => [].concat(...t.children).filter((t) => t.matches(e)),
       parents(t, e) {
         const i = [];

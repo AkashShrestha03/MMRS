@@ -69,7 +69,7 @@
       for (; b.length; ) if (b.pop() + "Transition" in a) return !0;
       return !1;
     };
-  (t.prototype = {
+  (t = {
     constructor: t,
     init: function () {
       var c = navigator.appVersion;
@@ -432,7 +432,7 @@
   }),
     (a.magnificPopup = {
       instance: null,
-      proto: t.prototype,
+      proto: t,
       modules: [],
       open: function (b, c) {
         return (
@@ -490,7 +490,7 @@
             : ((e = d), f.delegate && (e = e.find(f.delegate)), (e = e.eq(g))),
             b._openClick({ mfpEl: e }, d, f);
         } else
-          b.isOpen && b[c].apply(b, Array.prototype.slice.call(arguments, 1));
+          b.isOpen && b[c].apply(b, Array.slice.call(arguments, 1));
       else
         (c = a.extend(!0, {}, c)),
           u ? d.data("magnificPopup", c) : (d[0].magnificPopup = c),

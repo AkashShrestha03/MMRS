@@ -46,8 +46,8 @@
     }
     (a = a || e || t.jQuery),
       a &&
-        (s.prototype.option ||
-          (s.prototype.option = function (t) {
+        (s.option ||
+          (s.option = function (t) {
             a.isPlainObject(t) &&
               (this.options = a.extend(!0, this.options, t));
           }),
@@ -63,7 +63,7 @@
   function o(t) {
     !t || (t && t.bridget) || (t.bridget = i);
   }
-  var n = Array.prototype.slice,
+  var n = Array.slice,
     s = t.console,
     r =
       "undefined" == typeof s
@@ -81,7 +81,7 @@
       : (t.EvEmitter = e());
   })("undefined" != typeof window ? window : this, function () {
     function t() {}
-    var e = t.prototype;
+    var e = t;
     return (
       (e.on = function (t, e) {
         if (t && e) {
@@ -265,7 +265,7 @@
   })(window, function () {
     "use strict";
     var t = (function () {
-      var t = window.Element.prototype;
+      var t = window.Element;
       if (t.matches) return "matches";
       if (t.matchesSelector) return "matchesSelector";
       for (var e = ["webkit", "moz", "ms", "o"], i = 0; i < e.length; i++) {
@@ -338,9 +338,9 @@
         );
       }),
       (i.debounceMethod = function (t, e, i) {
-        var o = t.prototype[e],
+        var o = t[e],
           n = e + "Timeout";
-        t.prototype[e] = function () {
+        t[e] = function () {
           var t = this[n];
           t && clearTimeout(t);
           var e = arguments,
@@ -435,7 +435,7 @@
         transitionProperty: r + "Property",
         transitionDelay: r + "Delay",
       },
-      d = (o.prototype = Object.create(t.prototype));
+      d = (o = Object.create(t));
     (d.constructor = o),
       (d._create = function () {
         (this._transn = { ingProperties: {}, clean: {}, onEnd: {} }),
@@ -743,8 +743,8 @@
         t.apply(this, arguments);
       }
       return (
-        (e.prototype = Object.create(t.prototype)),
-        (e.prototype.constructor = e),
+        (e = Object.create(t)),
+        (e.constructor = e),
         e
       );
     }
@@ -776,8 +776,8 @@
         hiddenStyle: { opacity: 0, transform: "scale(0.001)" },
         visibleStyle: { opacity: 1, transform: "scale(1)" },
       });
-    var c = s.prototype;
-    o.extend(c, e.prototype),
+    var c = s;
+    o.extend(c, e),
       (c.option = function (t) {
         o.extend(this.options, t);
       }),
@@ -1137,7 +1137,7 @@
     function e() {
       t.Item.apply(this, arguments);
     }
-    var i = (e.prototype = Object.create(t.Item.prototype)),
+    var i = (e = Object.create(t.Item)),
       o = i._create;
     (i._create = function () {
       (this.id = this.layout.itemGUID++), o.call(this), (this.sortData = {});
@@ -1184,7 +1184,7 @@
           (this.items = t.filteredItems),
           (this.size = t.size));
     }
-    var o = i.prototype,
+    var o = i,
       n = [
         "_resetLayout",
         "_getItemLayoutPosition",
@@ -1197,7 +1197,7 @@
     return (
       n.forEach(function (t) {
         o[t] = function () {
-          return e.prototype[t].apply(this.isotope, arguments);
+          return e[t].apply(this.isotope, arguments);
         };
       }),
       (o.needsVerticalResizeLayout = function () {
@@ -1238,10 +1238,10 @@
           i.apply(this, arguments);
         }
         return (
-          (n.prototype = Object.create(o)),
-          (n.prototype.constructor = n),
+          (n = Object.create(o)),
+          (n.constructor = n),
           e && (n.options = e),
-          (n.prototype.namespace = t),
+          (n.namespace = t),
           (i.modes[t] = n),
           n
         );
@@ -1262,7 +1262,7 @@
   })(window, function (t, e) {
     var i = t.create("masonry");
     i.compatOptions.fitWidth = "isFitWidth";
-    var o = i.prototype;
+    var o = i;
     return (
       (o._resetLayout = function () {
         this.getSize(),
@@ -1394,9 +1394,9 @@
   })(window, function (t, e) {
     "use strict";
     var i = t.create("masonry"),
-      o = i.prototype,
+      o = i,
       n = { _getElementOffset: !0, layout: !0, _getMeasurement: !0 };
-    for (var s in e.prototype) n[s] || (o[s] = e.prototype[s]);
+    for (var s in e) n[s] || (o[s] = e[s]);
     var r = o.measureColumns;
     o.measureColumns = function () {
       (this.items = this.isotope.filteredItems), r.call(this);
@@ -1422,7 +1422,7 @@
   })(window, function (t) {
     "use strict";
     var e = t.create("fitRows"),
-      i = e.prototype;
+      i = e;
     return (
       (i._resetLayout = function () {
         (this.x = 0),
@@ -1457,7 +1457,7 @@
   })(window, function (t) {
     "use strict";
     var e = t.create("vertical", { horizontalAlignment: 0 }),
-      i = e.prototype;
+      i = e;
     return (
       (i._resetLayout = function () {
         this.y = 0;
@@ -1533,7 +1533,7 @@
       };
     }
     var u = t.jQuery,
-      h = String.prototype.trim
+      h = String.trim
         ? function (t) {
             return t.trim();
           }
@@ -1546,23 +1546,23 @@
         sortAscending: !0,
       });
     (d.Item = s), (d.LayoutMode = r);
-    var l = d.prototype;
+    var l = d;
     (l._create = function () {
       (this.itemGUID = 0),
         (this._sorters = {}),
         this._getSorters(),
-        e.prototype._create.call(this),
+        e._create.call(this),
         (this.modes = {}),
         (this.filteredItems = this.items),
         (this.sortHistory = ["original-order"]);
       for (var t in r.modes) this._initLayoutMode(t);
     }),
       (l.reloadItems = function () {
-        (this.itemGUID = 0), e.prototype.reloadItems.call(this);
+        (this.itemGUID = 0), e.reloadItems.call(this);
       }),
       (l._itemize = function () {
         for (
-          var t = e.prototype._itemize.apply(this, arguments), i = 0;
+          var t = e._itemize.apply(this, arguments), i = 0;
           i < t.length;
           i++
         ) {
@@ -1737,7 +1737,7 @@
         return (e.options = this.options[t]), e;
       }),
       (l._resetLayout = function () {
-        e.prototype._resetLayout.call(this), this._mode()._resetLayout();
+        e._resetLayout.call(this), this._mode()._resetLayout();
       }),
       (l._getItemLayoutPosition = function (t) {
         return this._mode()._getItemLayoutPosition(t);

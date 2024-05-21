@@ -12,7 +12,7 @@
     : (e.EvEmitter = t());
 })("undefined" != typeof window ? window : this, function () {
   function e() {}
-  var t = e.prototype;
+  var t = e;
   return (
     (t.on = function (e, t) {
       if (e && t) {
@@ -101,13 +101,13 @@
     }
     var h = e.jQuery,
       a = e.console,
-      d = Array.prototype.slice;
-    (o.prototype = Object.create(t.prototype)),
-      (o.prototype.options = {}),
-      (o.prototype.getImages = function () {
+      d = Array.slice;
+    (o = Object.create(t)),
+      (o.options = {}),
+      (o.getImages = function () {
         (this.images = []), this.elements.forEach(this.addElementImages, this);
       }),
-      (o.prototype.addElementImages = function (e) {
+      (o.addElementImages = function (e) {
         "IMG" == e.nodeName && this.addImage(e),
           this.options.background === !0 && this.addElementBackgroundImages(e);
         var t = e.nodeType;
@@ -127,7 +127,7 @@
       });
     var u = { 1: !0, 9: !0, 11: !0 };
     return (
-      (o.prototype.addElementBackgroundImages = function (e) {
+      (o.addElementBackgroundImages = function (e) {
         var t = getComputedStyle(e);
         if (t)
           for (
@@ -139,15 +139,15 @@
             o && this.addBackground(o, e), (n = i.exec(t.backgroundImage));
           }
       }),
-      (o.prototype.addImage = function (e) {
+      (o.addImage = function (e) {
         var t = new r(e);
         this.images.push(t);
       }),
-      (o.prototype.addBackground = function (e, t) {
+      (o.addBackground = function (e, t) {
         var i = new s(e, t);
         this.images.push(i);
       }),
-      (o.prototype.check = function () {
+      (o.check = function () {
         function e(e, i, n) {
           setTimeout(function () {
             t.progress(e, i, n);
@@ -164,7 +164,7 @@
             : void this.complete()
         );
       }),
-      (o.prototype.progress = function (e, t, i) {
+      (o.progress = function (e, t, i) {
         this.progressedCount++,
           (this.hasAnyBroken = this.hasAnyBroken || !e.isLoaded),
           this.emitEvent("progress", [this, e, t]),
@@ -174,7 +174,7 @@
           this.progressedCount == this.images.length && this.complete(),
           this.options.debug && a && a.log("progress: " + i, e, t);
       }),
-      (o.prototype.complete = function () {
+      (o.complete = function () {
         var e = this.hasAnyBroken ? "fail" : "done";
         if (
           ((this.isComplete = !0),
@@ -186,8 +186,8 @@
           this.jqDeferred[t](this);
         }
       }),
-      (r.prototype = Object.create(t.prototype)),
-      (r.prototype.check = function () {
+      (r = Object.create(t)),
+      (r.check = function () {
         var e = this.getIsImageComplete();
         return e
           ? void this.confirm(0 !== this.img.naturalWidth, "naturalWidth")
@@ -198,30 +198,30 @@
             this.img.addEventListener("error", this),
             void (this.proxyImage.src = this.img.src));
       }),
-      (r.prototype.getIsImageComplete = function () {
+      (r.getIsImageComplete = function () {
         return this.img.complete && this.img.naturalWidth;
       }),
-      (r.prototype.confirm = function (e, t) {
+      (r.confirm = function (e, t) {
         (this.isLoaded = e), this.emitEvent("progress", [this, this.img, t]);
       }),
-      (r.prototype.handleEvent = function (e) {
+      (r.handleEvent = function (e) {
         var t = "on" + e.type;
         this[t] && this[t](e);
       }),
-      (r.prototype.onload = function () {
+      (r.onload = function () {
         this.confirm(!0, "onload"), this.unbindEvents();
       }),
-      (r.prototype.onerror = function () {
+      (r.onerror = function () {
         this.confirm(!1, "onerror"), this.unbindEvents();
       }),
-      (r.prototype.unbindEvents = function () {
+      (r.unbindEvents = function () {
         this.proxyImage.removeEventListener("load", this),
           this.proxyImage.removeEventListener("error", this),
           this.img.removeEventListener("load", this),
           this.img.removeEventListener("error", this);
       }),
-      (s.prototype = Object.create(r.prototype)),
-      (s.prototype.check = function () {
+      (s = Object.create(r)),
+      (s.check = function () {
         this.img.addEventListener("load", this),
           this.img.addEventListener("error", this),
           (this.img.src = this.url);
@@ -230,11 +230,11 @@
           (this.confirm(0 !== this.img.naturalWidth, "naturalWidth"),
           this.unbindEvents());
       }),
-      (s.prototype.unbindEvents = function () {
+      (s.unbindEvents = function () {
         this.img.removeEventListener("load", this),
           this.img.removeEventListener("error", this);
       }),
-      (s.prototype.confirm = function (e, t) {
+      (s.confirm = function (e, t) {
         (this.isLoaded = e),
           this.emitEvent("progress", [this, this.element, t]);
       }),

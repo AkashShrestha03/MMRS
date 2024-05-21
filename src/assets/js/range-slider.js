@@ -33,7 +33,7 @@
     r,
     l,
     h = 0,
-    c = Array.prototype.slice;
+    c = Array.slice;
   (t.cleanData =
     ((r = t.cleanData),
     function (e) {
@@ -79,10 +79,10 @@
           }
           r[e] = (function () {
             function t() {
-              return i.prototype[e].apply(this, arguments);
+              return i[e].apply(this, arguments);
             }
             function n(t) {
-              return i.prototype[e].apply(this, t);
+              return i[e].apply(this, t);
             }
             return function () {
               var e,
@@ -99,7 +99,7 @@
             };
           })();
         }),
-        (o.prototype = t.widget.extend(
+        (o = t.widget.extend(
           a,
           { widgetEventPrefix: (n && a.widgetEventPrefix) || e },
           r,
@@ -107,7 +107,7 @@
         )),
         n
           ? (t.each(n._childConstructors, function (e, i) {
-              var s = i.prototype;
+              var s = i;
               t.widget(s.namespace + "." + s.widgetName, o, i._proto);
             }),
             delete n._childConstructors)
@@ -130,7 +130,7 @@
       return e;
     }),
     (t.widget.bridge = function (e, i) {
-      var s = i.prototype.widgetFullName || e;
+      var s = i.widgetFullName || e;
       t.fn[e] = function (n) {
         var o = "string" == typeof n,
           a = c.call(arguments, 1),
@@ -177,7 +177,7 @@
     }),
     (t.Widget = function () {}),
     (t.Widget._childConstructors = []),
-    (t.Widget.prototype = {
+    (t.Widget = {
       widgetName: "widget",
       widgetEventPrefix: "",
       defaultElement: "<div>",
@@ -438,7 +438,7 @@
       },
     }),
     t.each({ show: "fadeIn", hide: "fadeOut" }, function (e, i) {
-      t.Widget.prototype["_" + e] = function (s, n, o) {
+      t.Widget["_" + e] = function (s, n, o) {
         "string" == typeof n && (n = { effect: n });
         var a,
           r = n ? (!0 === n || "number" == typeof n ? i : n.effect || i) : e;
@@ -1006,7 +1006,7 @@
           (e.cache = "_" + t),
             (e.props.alpha = { idx: 3, type: "percent", def: 1 });
         }),
-        (o.fn = t.extend(o.prototype, {
+        (o.fn = t.extend(o, {
           parse: function (s, n, r, l) {
             if (s === e) return (this._rgba = [null, null, null, null]), this;
             (s.jquery || s.nodeType) && ((s = t(s).css(n)), (n = e));
@@ -1146,7 +1146,7 @@
             return 0 === this._rgba[3] ? "transparent" : this.toRgbaString();
           },
         })),
-        (o.fn.parse.prototype = o.fn),
+        (o.fn.parse = o.fn),
         (a.hsla.to = function (t) {
           if (null == t[0] || null == t[1] || null == t[2])
             return [null, null, null, t[3]];
@@ -4625,7 +4625,7 @@
 * http://jquery.org/license
 
 */ t.extend(t.ui, { datepicker: { version: "1.12.1" } }),
-    t.extend(v.prototype, {
+    t.extend(v, {
       markerClassName: "hasDatepicker",
       maxRows: 4,
       _widgetDatepicker: function () {
@@ -6359,7 +6359,7 @@
         (t.datepicker.initialized = !0)),
         0 === t("#" + t.datepicker._mainDivId).length &&
           t("body").append(t.datepicker.dpDiv);
-      var i = Array.prototype.slice.call(arguments, 1);
+      var i = Array.slice.call(arguments, 1);
       return ("string" == typeof e &&
         ("isDisabled" === e || "getDate" === e || "widget" === e)) ||
         ("option" === e &&
@@ -6541,7 +6541,7 @@
     (t.ui.plugin = {
       add: function (e, i, s) {
         var n,
-          o = t.ui[e].prototype;
+          o = t.ui[e];
         for (n in s)
           (o.plugins[n] = o.plugins[n] || []), o.plugins[n].push([i, s[n]]);
       },
@@ -6750,7 +6750,7 @@
           this._unblockFrames(),
           t.ui.ddmanager && t.ui.ddmanager.dragStop(this, e),
           this.handleElement.is(e.target) && this.element.trigger("focus"),
-          t.ui.mouse.prototype._mouseUp.call(this, e)
+          t.ui.mouse._mouseUp.call(this, e)
         );
       },
       cancel: function () {
@@ -7060,7 +7060,7 @@
           /^(drag|start|stop)/.test(e) &&
             ((this.positionAbs = this._convertPositionTo("absolute")),
             (s.offset = this.positionAbs)),
-          t.Widget.prototype._trigger.call(this, e, i, s)
+          t.Widget._trigger.call(this, e, i, s)
         );
       },
       plugins: {},
@@ -11567,7 +11567,7 @@
         return (this.fromOutside = !1), !this.cancelHelperRemoval;
       },
       _trigger: function () {
-        !1 === t.Widget.prototype._trigger.apply(this, arguments) &&
+        !1 === t.Widget._trigger.apply(this, arguments) &&
           this.cancel();
       },
       _uiHash: function (e) {
