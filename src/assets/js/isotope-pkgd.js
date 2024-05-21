@@ -434,8 +434,8 @@
         transitionDuration: r + "Duration",
         transitionProperty: r + "Property",
         transitionDelay: r + "Delay",
-      },
-    
+      };
+     
     (d.constructor = o),
       (d._create = function () {
         (this._transn = { ingProperties: {}, clean: {}, onEnd: {} }),
