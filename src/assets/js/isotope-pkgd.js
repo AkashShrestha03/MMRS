@@ -14,7 +14,7 @@
         return e(t, i);
       })
     : "object" == typeof module && module.exports
-    ? (module.exports = e(t, require("jquery")))
+    ? (module.exports = e(t, ("jquery")))
     : (t.jQueryBridget = e(t, t.jQuery));
 })(window, function (t, e) {
   "use strict";
