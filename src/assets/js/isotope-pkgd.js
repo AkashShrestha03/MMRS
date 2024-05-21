@@ -61,7 +61,7 @@
         o(a));
   }
   function o(t) {
-    !t || (t && t.bridget) || (t.bridget = i);
+    !t || (t && t.bridget) || (t.bridget );
   }
   var n = Array.prototype.slice,
     s = t.console,
