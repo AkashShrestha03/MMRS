@@ -288,7 +288,7 @@
           }
         )
       : "object" == typeof module && module.exports
-      ? (module.exports = e(t, require("desandro-matches-selector")))
+      ? (module.exports = e(t, ("desandro-matches-selector")))
       : (t.fizzyUIUtils = e(t, t.matchesSelector));
   })(window, function (t, e) {
     var i = {};
@@ -401,7 +401,7 @@
           e
         )
       : "object" == typeof module && module.exports
-      ? (module.exports = e(require("ev-emitter"), require("get-size")))
+      ? (module.exports = e(("ev-emitter"), ("get-size")))
       : ((t.Outlayer = {}), (t.Outlayer.Item = e(t.EvEmitter, t.getSize)));
   })(window, function (t, e) {
     "use strict";
@@ -1171,7 +1171,7 @@
           e
         )
       : "object" == typeof module && module.exports
-      ? (module.exports = e(require("get-size"), require("outlayer")))
+      ? (module.exports = e(("get-size"), ("outlayer")))
       : ((t.Isotope = t.Isotope || {}),
         (t.Isotope.LayoutMode = e(t.getSize, t.Outlayer)));
   })(window, function (t, e) {
@@ -1257,7 +1257,7 @@
           e
         )
       : "object" == typeof module && module.exports
-      ? (module.exports = e(require("outlayer"), require("get-size")))
+      ? (module.exports = e(("outlayer"), ("get-size")))
       : (t.Masonry = e(t.Outlayer, t.getSize));
   })(window, function (t, e) {
     var i = t.create("masonry");
