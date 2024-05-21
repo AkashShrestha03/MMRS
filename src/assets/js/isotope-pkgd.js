@@ -743,7 +743,7 @@
         t.apply(this, arguments);
       }
       return (
-        (e.prototype = Object.create(t.prototype)),
+        (e.prototype = Object.create(t)),
         (e.prototype.constructor = e),
         e
       );
