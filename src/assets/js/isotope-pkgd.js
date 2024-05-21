@@ -436,7 +436,7 @@
         transitionDelay: r + "Delay",
       };
      
-    (d.constructor = o),
+   
       (d._create = function () {
         (this._transn = { ingProperties: {}, clean: {}, onEnd: {} }),
           this.css({ position: "absolute" });
