@@ -435,7 +435,7 @@
         transitionProperty: r + "Property",
         transitionDelay: r + "Delay",
       },
-      d = (o.prototype = Object.create(t.prototype));
+    
     (d.constructor = o),
       (d._create = function () {
         (this._transn = { ingProperties: {}, clean: {}, onEnd: {} }),
