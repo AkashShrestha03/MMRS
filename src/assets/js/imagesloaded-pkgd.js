@@ -102,7 +102,7 @@
     var h = e.jQuery,
       a = e.console,
       d = Array.prototype.slice;
-    (o.prototype = Object.create(t.prototype)),
+    (o.prototype = Object.create(t)),
       (o.prototype.options = {}),
       (o.prototype.getImages = function () {
         (this.images = []), this.elements.forEach(this.addElementImages, this);
