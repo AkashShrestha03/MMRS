@@ -65,7 +65,7 @@
           return t(e, i);
         })
       : "object" == typeof module && module.exports
-      ? (module.exports = t(e, ("ev-emitter")))
+      ? (module.exports = t(e, "ev-emitter"))
       : (e.imagesLoaded = t(e, e.EvEmitter));
   })("undefined" != typeof window ? window : this, function (e, t) {
     function i(e, t) {
@@ -102,8 +102,8 @@
     var h = e.jQuery,
       a = e.console,
       d = Array.prototype.slice;
-    (o.prototype = Object.create(t)),
-      (o.prototype.options = {}),
+
+    (o.prototype.options = {}),
       (o.prototype.getImages = function () {
         (this.images = []), this.elements.forEach(this.addElementImages, this);
       }),
