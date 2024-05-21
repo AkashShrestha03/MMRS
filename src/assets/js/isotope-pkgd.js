@@ -288,7 +288,7 @@
           }
         )
       : "object" == typeof module && module.exports
-      ? (module.exports = e(t, require("desandro-matches-selector")))
+      ? (module.exports = e(t, ("desandro-matches-selector")))
       : (t.fizzyUIUtils = e(t, t.matchesSelector));
   })(window, function (t, e) {
     var i = {};
