@@ -186,7 +186,7 @@
           this.jqDeferred[t](this);
         }
       }),
-      (r.prototype = Object.create(t.prototype)),
+      
       (r.prototype.check = function () {
         var e = this.getIsImageComplete();
         return e
