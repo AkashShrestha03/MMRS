@@ -401,7 +401,7 @@
           e
         )
       : "object" == typeof module && module.exports
-      ? (module.exports = e(require("ev-emitter"), require("get-size")))
+      ? (module.exports = e(("ev-emitter"), ("get-size")))
       : ((t.Outlayer = {}), (t.Outlayer.Item = e(t.EvEmitter, t.getSize)));
   })(window, function (t, e) {
     "use strict";
