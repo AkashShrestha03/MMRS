@@ -288,7 +288,7 @@
           }
         )
       : "object" == typeof module && module.exports
-      ? (module.exports = e(t, ("desandro-matches-selector")))
+      ? (module.exports = e(t, require("desandro-matches-selector")))
       : (t.fizzyUIUtils = e(t, t.matchesSelector));
   })(window, function (t, e) {
     var i = {};
@@ -401,7 +401,7 @@
           e
         )
       : "object" == typeof module && module.exports
-      ? (module.exports = e(("ev-emitter"), ("get-size")))
+      ? (module.exports = e(require("ev-emitter"), require("get-size")))
       : ((t.Outlayer = {}), (t.Outlayer.Item = e(t.EvEmitter, t.getSize)));
   })(window, function (t, e) {
     "use strict";
@@ -1130,7 +1130,7 @@
     "function" == typeof define && define.amd
       ? define("isotope-layout/js/item", ["outlayer/outlayer"], e)
       : "object" == typeof module && module.exports
-      ? (module.exports = e(("outlayer")))
+      ? (module.exports = e(require("outlayer")))
       : ((t.Isotope = t.Isotope || {}), (t.Isotope.Item = e(t.Outlayer)));
   })(window, function (t) {
     "use strict";
@@ -1171,7 +1171,7 @@
           e
         )
       : "object" == typeof module && module.exports
-      ? (module.exports = e(("get-size"), ("outlayer")))
+      ? (module.exports = e(require("get-size"), require("outlayer")))
       : ((t.Isotope = t.Isotope || {}),
         (t.Isotope.LayoutMode = e(t.getSize, t.Outlayer)));
   })(window, function (t, e) {
@@ -1257,7 +1257,7 @@
           e
         )
       : "object" == typeof module && module.exports
-      ? (module.exports = e(("outlayer"), ("get-size")))
+      ? (module.exports = e(require("outlayer"), require("get-size")))
       : (t.Masonry = e(t.Outlayer, t.getSize));
   })(window, function (t, e) {
     var i = t.create("masonry");
@@ -1387,8 +1387,8 @@
         )
       : "object" == typeof module && module.exports
       ? (module.exports = e(
-          ("../layout-mode"),
-          ("masonry-layout")
+          require("../layout-mode"),
+          require("masonry-layout")
         ))
       : e(t.Isotope.LayoutMode, t.Masonry);
   })(window, function (t, e) {
@@ -1417,7 +1417,7 @@
     "function" == typeof define && define.amd
       ? define("isotope-layout/js/layout-modes/fit-rows", ["../layout-mode"], e)
       : "object" == typeof exports
-      ? (module.exports = e(("../layout-mode")))
+      ? (module.exports = e(require("../layout-mode")))
       : e(t.Isotope.LayoutMode);
   })(window, function (t) {
     "use strict";
@@ -1452,7 +1452,7 @@
     "function" == typeof define && define.amd
       ? define("isotope-layout/js/layout-modes/vertical", ["../layout-mode"], e)
       : "object" == typeof module && module.exports
-      ? (module.exports = e(("../layout-mode")))
+      ? (module.exports = e(require("../layout-mode")))
       : e(t.Isotope.LayoutMode);
   })(window, function (t) {
     "use strict";
