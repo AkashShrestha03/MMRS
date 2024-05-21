@@ -589,7 +589,7 @@ div.demo img {
   transition: all 0.3s 0s ease-out;
 }
 .body-overlay:hover {
-  cursor: url("../img/icon/cross-out.html"), pointer;
+  cursor: url("../../../public/img//icon/cross-out.html"), pointer;
 }
 
 .body-overlay.opened {
@@ -8464,7 +8464,6 @@ body .ui-tooltip {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   padding-right: 3px;
 }
 

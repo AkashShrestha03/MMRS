@@ -16,7 +16,7 @@ const Partners = () => {
           <div className="col col-lg-3">
             <div className="tp-brand-5-wrapper">
               <div className="tp-brand-5-thumb">
-                <img src="../img/brand/brand-5-1.jpg" alt="" />
+                <img src="./img/brand/brand-5-1.jpg" alt="" />
               </div>
             </div>
           </div>

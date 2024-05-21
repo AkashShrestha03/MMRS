@@ -31,28 +31,11 @@ const Header = () => {
                       </li>
                       <li class="has-dropdown">
                         <NavLink to={"/portfolio"}>Portfolio</NavLink>
-                        <ul class="submenu tp-submenu">
-                          <li>
-                            <a href="service.html">Our Service</a>
-                          </li>
-                          <li>
-                            <a href="service-details.html">Service Details</a>
-                          </li>
-                        </ul>
+                        
                       </li>
                       <li class="has-dropdown">
                         <NavLink to={"/services"}>Services</NavLink>
-                        <ul class="submenu tp-submenu">
-                          <li>
-                            <a href="blog.html">Blog</a>
-                          </li>
-                          <li>
-                            <a href="blog-sideber.html">Blog Sidebar</a>
-                          </li>
-                          <li>
-                            <a href="blog-details.html">Blog Details</a>
-                          </li>
-                        </ul>
+                       
                       </li>
 
                       <li>
