@@ -11,106 +11,11 @@ const About = () => {
                 <div className="tp-about-inr-heading-content text-center">
                   <span className="tp-about-inr-heading-subtitle">
                     <span>
-                      <a href="index-2.html">Techub</a>{" "}
+                      <a href="index-2.html">MMR</a>{" "}
                       <span className="spacing">/</span>
                     </span>{" "}
                     About us
                   </span>
-                  <h3 className="tp-about-inr-heading-title">
-                    It's not that we use technology <br />
-                    we live technology
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="tp-counter-inr-area pb-50">
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-3 col-lg-3 col-md-6">
-                <div className="tp-counter-2-wrapper text-center mb-30">
-                  <div className="tp-counter-2-number-item d-flex justify-content-center">
-                    <h2 className="tp-counter tp-counter-2-count tp-counter-inr-count">
-                      <span
-                        className="purecounter"
-                        data-purecounter-duration="2"
-                        data-purecounter-end="120"
-                      >
-                        120
-                      </span>
-                      <span className="tp-counter-inr-count-hlt">M</span>
-                    </h2>
-                  </div>
-                  <div className="tp-counter-2-text text-center">
-                    <p className="tp-counter-2-text-paragraph tp-counter-inr-paragraph">
-                      Succesfull projects
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-3 col-md-6">
-                <div className="tp-counter-2-wrapper text-center mb-30">
-                  <div className="tp-counter-2-number-item d-flex justify-content-center">
-                    <h2 className="tp-counter tp-counter-2-count tp-counter-inr-count">
-                      <span
-                        className="purecounter"
-                        data-purecounter-duration="2"
-                        data-purecounter-end="65"
-                      >
-                        65
-                      </span>
-                      <span className="tp-counter-inr-count-hlt">M</span>
-                    </h2>
-                  </div>
-                  <div className="tp-counter-2-text text-center">
-                    <p className="tp-counter-2-text-paragraph tp-counter-inr-paragraph">
-                      Satisfied clients
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-3 col-md-6">
-                <div className="tp-counter-2-wrapper text-center mb-30">
-                  <div className="tp-counter-2-number-item d-flex justify-content-center">
-                    <h2 className="tp-counter tp-counter-2-count tp-counter-inr-count">
-                      <span
-                        className="purecounter"
-                        data-purecounter-duration="2"
-                        data-purecounter-end="196"
-                      >
-                        196
-                      </span>
-                      <span className="tp-counter-inr-count-hlt">+</span>
-                    </h2>
-                  </div>
-                  <div className="tp-counter-2-text text-center">
-                    <p className="tp-counter-2-text-paragraph tp-counter-inr-paragraph">
-                      Experienced staff
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-3 col-md-6">
-                <div className="tp-counter-2-wrapper text-center mb-30">
-                  <div className="tp-counter-2-number-item d-flex justify-content-center">
-                    <h2 className="tp-counter tp-counter-2-count tp-counter-inr-count">
-                      <span
-                        className="purecounter"
-                        data-purecounter-duration="2"
-                        data-purecounter-end="10"
-                      >
-                        10
-                      </span>
-                      <span className="tp-counter-inr-count-hlt">B</span>
-                    </h2>
-                  </div>
-                  <div className="tp-counter-2-text text-center">
-                    <p className="tp-counter-2-text-paragraph tp-counter-inr-paragraph">
-                      Awards winning
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -118,21 +23,14 @@ const About = () => {
         </section>
       </div>
 
-      <div className="tp-about-inr-bg-area fix">
-        <div className="tp-about-inr-bg text-center">
-          <img src="../img/about/about-inr-bg.jpg" alt="" />
-        </div>
-      </div>
 
       <div className="tp-brand-5-area pt-115 pb-90 p-relative">
         <div className="container">
           <div className="row">
             <div className="tp-section-5-title-wrapper mb-50 text-center wow fadeInUp">
-              <span className="tp-section-5-subtitle tp-about-inr-subtitle">
-                MORE THAN 30000+ TEAM ARE USING TECHUB
-              </span>
+              
               <h3 className="tp-section-5-title tp-about-inr-title">
-                Trusted by worlwide business
+                Our Business Partners
               </h3>
             </div>
           </div>
@@ -209,7 +107,7 @@ const About = () => {
           <div className="row ">
             <div className="col-xl-6">
               <div className="tp-about-inr-bottom-thumb wow fadeInLeft">
-                <img src="../img/about/about-inr-btm-img.jpg" alt="" />
+                <img src="../img/about/Vector-01.jpg" height={500}  alt="" />
               </div>
             </div>
             <div className="col-xl-6">
@@ -283,7 +181,7 @@ const About = () => {
                   <p className="tp-value-paragraph">
                     Expert Solutions for Every Budget. We are a team of creative
                     and dedicated professionals who turn your ideas into
-                    something truly unique.
+                    something truly unique.
                   </p>
                 </div>
               </div>

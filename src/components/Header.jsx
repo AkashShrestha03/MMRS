@@ -3,37 +3,37 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header class="tp-header-height bg-white">
-      <div id="header-sticky" class="tp-header-bottom">
-        <div class="tp-header-area">
-          <div class="container-fluid">
-            <div class="row align-items-center">
-              <div class="col-xl-2 col-lg-4 col-md-4 col-6">
-                <div class=" ">
+    <header className="tp-header-height bg-white">
+      <div id="header-sticky" className="tp-header-bottom">
+        <div className="tp-header-area">
+          <div className="container-fluid">
+            <div className="row align-items-center">
+              <div className="col-xl-2 col-lg-4 col-md-4 col-6">
+                <div className=" ">
                   <a href="">
                     <div className="logo"></div>
                   </a>
                 </div>
               </div>
-              <div class="col-xl-6 d-none d-xl-block">
-                <div class="main-menu">
-                  <nav class="tp-main-menu-content">
+              <div className="col-xl-6 d-none d-xl-block">
+                <div className="main-menu">
+                  <nav className="tp-main-menu-content">
                     <ul>
-                      <li class="has-dropdown">
-                        <NavLink to={""} class="color-active" href="index-2.html">
+                      <li className="has-dropdown">
+                        <NavLink to={""} className="color-active" href="index-2.html">
                           Home
                         </NavLink>
                         
                       </li>
-                      <li class="has-dropdown">
+                      <li className="has-dropdown">
                         <NavLink to={"about"}>About Us</NavLink>
                        
                       </li>
-                      <li class="has-dropdown">
+                      <li className="has-dropdown">
                         <NavLink to={"/portfolio"}>Portfolio</NavLink>
                         
                       </li>
-                      <li class="has-dropdown">
+                      <li className="has-dropdown">
                         <NavLink to={"/services"}>Services</NavLink>
                        
                       </li>
@@ -45,11 +45,11 @@ const Header = () => {
                   </nav>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-8 col-md-8 col-6">
-                <div class="tp-header-right d-flex justify-content-end align-items-center">
-                  <div class="tp-header-button d-none d-lg-block">
+              <div className="col-xl-4 col-lg-8 col-md-8 col-6">
+                <div className="tp-header-right d-flex justify-content-end align-items-center">
+                  <div className="tp-header-button d-none d-lg-block">
                     <a
-                      class="tp-header-btn"
+                      className="tp-header-btn"
                       rel="noreferrer"
                       href="contact.html"
                       target="_blank"

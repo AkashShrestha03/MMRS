@@ -1,4 +1,4 @@
-
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
                 data-wow-duration="1s"
               >
                 <div className="tp-footer-logo">
-                  <div class=" ">
+                  <div >
                     <a href="">
                       <div className="logo"></div>
                     </a>
@@ -31,7 +31,7 @@ const Footer = () => {
                     <i className="flaticon-instagram"></i>
                   </a>
                   <a href="#">
-                    <i className="flaticon-pinterest-logo "></i>
+                    <i className="flaticon-whatsapp"></i>
                   </a>
                   <a href="#">
                     <i className="flaticon-pinterest-logo "></i>
@@ -87,7 +87,6 @@ const Footer = () => {
                 data-wow-delay=".9s"
                 data-wow-duration="1s"
               >
-                
                 <div className="tp-footer-thumb-wrap">
                   <p className="tp-footer-parag">
                     Get Special Offers. We Never Spam.
@@ -112,9 +111,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    
     </section>
   );
-}
+};
 
-export default Footer
+export default Footer;
