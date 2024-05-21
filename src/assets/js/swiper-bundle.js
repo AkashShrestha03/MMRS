@@ -35,7 +35,7 @@
         for (var t = 1; t < arguments.length; t++) {
           var a = arguments[t];
           for (var i in a)
-            Object.hasOwnProperty.call(a, i) && (e[i] = a[i]);
+            Object.prototype.hasOwnProperty.call(a, i) && (e[i] = a[i]);
         }
         return e;
       }).apply(this, arguments);
@@ -176,7 +176,7 @@
     if ("function" == typeof Proxy) return !0;
     try {
       return (
-        Date.toString.call(
+        Date.prototype.toString.call(
           Reflect.construct(Date, [], function () {})
         ),
         !0
@@ -192,7 +192,7 @@
           var i = [null];
           i.push.apply(i, t);
           var s = new (Function.bind.apply(e, i))();
-          return a && d(s, a), s;
+          return a && d(s, a.prototype), s;
         }).apply(null, arguments);
   }
   function u(e) {
@@ -216,7 +216,7 @@
         return c(e, arguments, o(this).constructor);
       }
       return (
-        (i = Object.create(e, {
+        (i.prototype = Object.create(e.prototype, {
           constructor: {
             value: i,
             enumerable: !1,
@@ -255,8 +255,8 @@
     }
     return (
       (a = e),
-      ((t = i) = Object.create(a)),
-      (t.constructor = t),
+      ((t = i).prototype = Object.create(a.prototype)),
+      (t.prototype.constructor = t),
       (t.__proto__ = a),
       i
     );
@@ -272,7 +272,7 @@
     );
   }
   function f(e, t) {
-    return Array.filter.call(e, t);
+    return Array.prototype.filter.call(e, t);
   }
   function m(e, t) {
     var a = l(),
@@ -317,7 +317,7 @@
       })(s)
     );
   }
-  m.fn = h;
+  m.fn = h.prototype;
   var g,
     b,
     w,
@@ -3453,7 +3453,7 @@
       var a,
         i,
         s,
-        r = t;
+        r = t.prototype;
       return (
         (r.emitContainerClasses = function () {
           var e = this;
@@ -3683,9 +3683,9 @@
           S(V, e);
         }),
         (t.installModule = function (e) {
-          t.modules || (t.modules = {});
-          var a = e.name || Object.keys(t.modules).length + "_" + x();
-          t.modules[a] = e;
+          t.prototype.modules || (t.prototype.modules = {});
+          var a = e.name || Object.keys(t.prototype.modules).length + "_" + x();
+          t.prototype.modules[a] = e;
         }),
         (t.use = function (e) {
           return Array.isArray(e)
@@ -3710,14 +3710,14 @@
             },
           },
         ]),
-        (i = null) && e(a, i),
+        (i = null) && e(a.prototype, i),
         s && e(a, s),
         t
       );
     })();
   Object.keys(R).forEach(function (e) {
     Object.keys(R[e]).forEach(function (t) {
-      W[t] = R[e][t];
+      W.prototype[t] = R[e][t];
     });
   }),
     W.use([L, I]);

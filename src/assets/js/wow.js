@@ -18,19 +18,19 @@
         return -1;
       };
   (b = (function () {
-    function a() {}
+    function a () {}
     return (
-      (a.extend = function (a, b) {
+      (a.prototype.extend = function (a, b) {
         var c, d;
         for (c in b) (d = b[c]), null == a[c] && (a[c] = d);
         return a;
       }),
-      (a.isMobile = function (a) {
+      (a.prototype.isMobile = function (a) {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
           a
         );
       }),
-      (a.createEvent = function (a, b, c, d) {
+      (a.prototype.createEvent = function (a, b, c, d) {
         var e;
         return (
           null == b && (b = !1),
@@ -45,7 +45,7 @@
           e
         );
       }),
-      (a.emitEvent = function (a, b) {
+      (a.prototype.emitEvent = function (a, b) {
         return null != a.dispatchEvent
           ? a.dispatchEvent(b)
           : b in (null != a)
@@ -54,21 +54,21 @@
           ? a["on" + b]()
           : void 0;
       }),
-      (a.addEvent = function (a, b, c) {
+      (a.prototype.addEvent = function (a, b, c) {
         return null != a.addEventListener
           ? a.addEventListener(b, c, !1)
           : null != a.attachEvent
           ? a.attachEvent("on" + b, c)
           : (a[b] = c);
       }),
-      (a.removeEvent = function (a, b, c) {
+      (a.prototype.removeEvent = function (a, b, c) {
         return null != a.removeEventListener
           ? a.removeEventListener(b, c, !1)
           : null != a.detachEvent
           ? a.detachEvent("on" + b, c)
           : delete a[b];
       }),
-      (a.innerHeight = function () {
+      (a.prototype.innerHeight = function () {
         return "innerHeight" in window
           ? window.innerHeight
           : document.documentElement.clientHeight;
@@ -84,12 +84,12 @@
           (this.keys = []), (this.values = []);
         }
         return (
-          (a.get = function (a) {
+          (a.prototype.get = function (a) {
             var b, c, d, e, f;
             for (f = this.keys, b = d = 0, e = f.length; e > d; b = ++d)
               if (((c = f[b]), c === a)) return this.values[b];
           }),
-          (a.set = function (a, b) {
+          (a.prototype.set = function (a, b) {
             var c, d, e, f, g;
             for (g = this.keys, c = e = 0, f = g.length; f > e; c = ++e)
               if (((d = g[c]), d === a)) return void (this.values[c] = b);
@@ -113,7 +113,7 @@
                 "WOW.js cannot detect dom mutations, please call .sync() after loading new content."
               );
         }
-        return (a.notSupported = !0), (a.observe = function () {}), a;
+        return (a.notSupported = !0), (a.prototype.observe = function () {}), a;
       })())),
     (d =
       window.getComputedStyle ||
@@ -151,7 +151,7 @@
           (this.wowEvent = this.util().createEvent(this.config.boxClass));
       }
       return (
-        (e.defaults = {
+        (e.prototype.defaults = {
           boxClass: "wow",
           animateClass: "animated",
           offset: 0,
@@ -160,7 +160,7 @@
           callback: null,
           scrollContainer: null,
         }),
-        (e.init = function () {
+        (e.prototype.init = function () {
           var a;
           return (
             (this.element = window.document.documentElement),
@@ -170,7 +170,7 @@
             (this.finished = [])
           );
         }),
-        (e.start = function () {
+        (e.prototype.start = function () {
           var b, c, d, e;
           if (
             ((this.stopped = !1),
@@ -237,7 +237,7 @@
               : void 0
           );
         }),
-        (e.stop = function () {
+        (e.prototype.stop = function () {
           return (
             (this.stopped = !0),
             this.util().removeEvent(
@@ -249,10 +249,10 @@
             null != this.interval ? clearInterval(this.interval) : void 0
           );
         }),
-        (e.sync = function (b) {
+        (e.prototype.sync = function (b) {
           return a.notSupported ? this.doSync(this.element) : void 0;
         }),
-        (e.doSync = function (a) {
+        (e.prototype.doSync = function (a) {
           var b, c, d, e, f;
           if ((null == a && (a = this.element), 1 === a.nodeType)) {
             for (
@@ -276,7 +276,7 @@
             return f;
           }
         }),
-        (e.show = function (a) {
+        (e.prototype.show = function (a) {
           return (
             this.applyStyle(a),
             (a.className = a.className + " " + this.config.animateClass),
@@ -289,7 +289,7 @@
             a
           );
         }),
-        (e.applyStyle = function (a, b) {
+        (e.prototype.applyStyle = function (a, b) {
           var c, d, e;
           return (
             (d = a.getAttribute("data-wow-duration")),
@@ -304,7 +304,7 @@
             )
           );
         }),
-        (e.animate = (function () {
+        (e.prototype.animate = (function () {
           return "requestAnimationFrame" in window
             ? function (a) {
                 return window.requestAnimationFrame(a);
@@ -313,13 +313,13 @@
                 return a();
               };
         })()),
-        (e.resetStyle = function () {
+        (e.prototype.resetStyle = function () {
           var a, b, c, d, e;
           for (d = this.boxes, e = [], b = 0, c = d.length; c > b; b++)
             (a = d[b]), e.push((a.style.visibility = "visible"));
           return e;
         }),
-        (e.resetAnimation = function (a) {
+        (e.prototype.resetAnimation = function (a) {
           var b;
           return a.type.toLowerCase().indexOf("animationend") >= 0
             ? ((b = a.target || a.srcElement),
@@ -328,7 +328,7 @@
                 .trim()))
             : void 0;
         }),
-        (e.customStyle = function (a, b, c, d, e) {
+        (e.prototype.customStyle = function (a, b, c, d, e) {
           return (
             b && this.cacheAnimationName(a),
             (a.style.visibility = b ? "hidden" : "visible"),
@@ -341,8 +341,8 @@
             a
           );
         }),
-        (e.vendors = ["moz", "webkit"]),
-        (e.vendorSet = function (a, b) {
+        (e.prototype.vendors = ["moz", "webkit"]),
+        (e.prototype.vendorSet = function (a, b) {
           var c, d, e, f;
           d = [];
           for (c in b)
@@ -366,7 +366,7 @@
               );
           return d;
         }),
-        (e.vendorCSS = function (a, b) {
+        (e.prototype.vendorCSS = function (a, b) {
           var c, e, f, g, h, i;
           for (
             h = d(a),
@@ -380,7 +380,7 @@
             (i = f[c]), (g = g || h.getPropertyCSSValue("-" + i + "-" + b));
           return g;
         }),
-        (e.animationName = function (a) {
+        (e.prototype.animationName = function (a) {
           var b;
           try {
             b = this.vendorCSS(a, "animation-name").cssText;
@@ -389,16 +389,16 @@
           }
           return "none" === b ? "" : b;
         }),
-        (e.cacheAnimationName = function (a) {
+        (e.prototype.cacheAnimationName = function (a) {
           return this.animationNameCache.set(a, this.animationName(a));
         }),
-        (e.cachedAnimationName = function (a) {
+        (e.prototype.cachedAnimationName = function (a) {
           return this.animationNameCache.get(a);
         }),
-        (e.scrollHandler = function () {
+        (e.prototype.scrollHandler = function () {
           return (this.scrolled = !0);
         }),
-        (e.scrollCallback = function () {
+        (e.prototype.scrollCallback = function () {
           var a;
           return !this.scrolled ||
             ((this.scrolled = !1),
@@ -412,12 +412,12 @@
             ? void 0
             : this.stop();
         }),
-        (e.offsetTop = function (a) {
+        (e.prototype.offsetTop = function (a) {
           for (var b; void 0 === a.offsetTop; ) a = a.parentNode;
           for (b = a.offsetTop; (a = a.offsetParent); ) b += a.offsetTop;
           return b;
         }),
-        (e.isVisible = function (a) {
+        (e.prototype.isVisible = function (a) {
           var b, c, d, e, f;
           return (
             (c = a.getAttribute("data-wow-offset") || this.config.offset),
@@ -434,10 +434,10 @@
             e >= d && b >= f
           );
         }),
-        (e.util = function () {
+        (e.prototype.util = function () {
           return null != this._util ? this._util : (this._util = new b());
         }),
-        (e.disabled = function () {
+        (e.prototype.disabled = function () {
           return (
             !this.config.mobile && this.util().isMobile(navigator.userAgent)
           );
