@@ -15,7 +15,6 @@ import "../index.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "../assets/js/ajax-form";
 import "../assets/js/imagesloaded-pkgd";
-import "../assets/js/isotope-pkgd";
 import "../assets/js/magnific-popup";
 import "../assets/js/main";
 import "../assets/js/nice-select";
