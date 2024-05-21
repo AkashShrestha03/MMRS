@@ -29,7 +29,7 @@
 
 
 (function ($) {
-	"use strict";
+
 
 
 	var windowOn = $(window);
