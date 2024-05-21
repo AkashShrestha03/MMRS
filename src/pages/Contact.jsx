@@ -2,7 +2,7 @@
 
 const Contact = () => {
   return (
-    <main>
+    <main className="">
       <section
         class="tp-portfolio-breadcrumb-area p-relative"
         data-background="../img/contact/contact-brdcmb-bg.jpg"
