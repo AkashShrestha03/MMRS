@@ -5,7 +5,7 @@ import Testimonials from "../components/Testimonials";
 
 const HomePage = () => {
   return (
-    <main>
+    <main className="bg-white">
       <section className="tp-slider-5-area p-relative z-index-1 fix">
         <div className="tp-slider-5-height">
           <div className="tp-slider-5-bg"></div>

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header class="tp-header-height">
+    <header class="tp-header-height bg-white">
       <div id="header-sticky" class="tp-header-bottom">
         <div class="tp-header-area">
           <div class="container-fluid">
@@ -11,7 +11,7 @@ const Header = () => {
               <div class="col-xl-2 col-lg-4 col-md-4 col-6">
                 <div class=" ">
                   <a href="">
-                    <div className="logo "></div>
+                    <div className="logo"></div>
                   </a>
                 </div>
               </div>
@@ -30,7 +30,7 @@ const Header = () => {
                        
                       </li>
                       <li class="has-dropdown">
-                        <a href="service.html">Portfolio</a>
+                        <NavLink to={"/portfolio"}>Portfolio</NavLink>
                         <ul class="submenu tp-submenu">
                           <li>
                             <a href="service.html">Our Service</a>
@@ -41,7 +41,7 @@ const Header = () => {
                         </ul>
                       </li>
                       <li class="has-dropdown">
-                        <a href="blog.html">Services</a>
+                        <NavLink to={"/services"}>Services</NavLink>
                         <ul class="submenu tp-submenu">
                           <li>
                             <a href="blog.html">Blog</a>
