@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Partners from "../components/Partners";
 import RecentWorks from "../components/RecentWorks";
 import Testimonials from "../components/Testimonials";
+//Animation
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   return (
@@ -12,8 +14,23 @@ const HomePage = () => {
           <div className="container">
             <div className="row align-items-end">
               <div className="col-xl-6 col-lg-6">
-                <div className="tp-slider-5-content p-relative z-index-11">
+                <motion.div
+                  animate={{ y: -20 }}
+                  transition={{
+                    ease: "linear",
+                    duration: 0.8,
+                    x: { duration: 1 },
+                  }}
+                  className="tp-slider-5-content p-relative z-index-11"
+                >
                   <div
+                    animate={{ y: -20 }}
+                    transition={{
+                      type: "spring",
+                      ease: "linear",
+                      duration: 1,
+                      x: { duration: 3 },
+                    }}
                     className="tp-slider-5-title-box mb-50 wow fadeInUp"
                     data-wow-delay=".3s"
                     data-wow-duration="1s"
@@ -21,7 +38,7 @@ const HomePage = () => {
                     <span className="tp-slider-sub-title tp-slider-sub-title-5">
                       Where affordability meets quality
                     </span>
-                    <h1 className="tp-slider-title tp-slider-title-5">
+                    <h1 className="tp-slider-title tp-slider-title-5 pt-5 mt-4">
                       Your Partner <br />
                       In
                       <span className="ms-4">Growth </span>
@@ -30,14 +47,10 @@ const HomePage = () => {
                     </h1>
                     <p className="tp-slider-5-paragraph">
                       Elevating Individuals And Businesses Through Technology
-                     <br /> And Strategy At Affordable Solutions
+                      <br /> And Strategy.
                     </p>
                   </div>
-                  <div
-                    className="tp-slider-5-btn-box d-inline-flex wow fadeInUp"
-                    data-wow-delay=".5s"
-                    data-wow-duration="1s"
-                  >
+                  <div className="tp-slider-5-btn-box d-inline-flex wow fadeInUp">
                     <a
                       className="tp-btn"
                       rel="noreferrer"
@@ -47,7 +60,7 @@ const HomePage = () => {
                       <span>Get Started</span>
                     </a>
                   </div>
-                </div>
+                </motion.div>
               </div>
               <div className="col-xl-6 col-lg-6">
                 <div className="tp-slider-5-thumb p-relative z-index-1">
@@ -70,51 +83,50 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="tp-service-5-area pt-190 pb-90 p-relative fix" id="services">
+      <section
+        className="tp-service-5-area pt-190 pb-90 p-relative fix"
+        id="services"
+      >
         <div className="container">
           <div className="row">
             <div className="tp-section-5-title-wrapper mb-50 text-center wow fadeInUp">
-             
-              <h3 className="tp-section-5-title">
-                Services
-              </h3>
+              <h3 className="tp-section-5-title">Services</h3>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-6 col-md-6">
+            <div className="col-lg-6 col-md-6 ">
               <div
-                className="tp-service-5-wrapper mb-30 wow fadeInUp"
+                className="tp-service-5-wrapper mb-30 wow fadeInUp "
                 data-wow-delay=".3s"
                 data-wow-duration="1s"
               >
-                <div className="tp-service-5-item d-flex">
+                <div className="tp-service-5-item d-flex service-containers">
                   <div className="tp-service-5-thumb">
                     <img src="../img/service/service-5-img1.png" alt="" />
                   </div>
                   <div className="tp-service-5-content">
                     <h4 className="tp-service-5-title">
-                      <a href="service-details.html">Technology And Engineering</a>
+                      <a href="service-details.html">
+                        Technology And Engineering
+                      </a>
                     </h4>
                     <p className="tp-service-5-paragraph">
-                      System is a term used to refer to an zed collection and to
-                     
+                      Our interdisciplinary team merges technology and
+                      engineering expertise to drive innovative solutions across
+                      software development and hardware design.
                     </p>
-                    <div className="tp-service-5-btn">
-                      <a href="service-details.html">
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </a>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-6">
+            <div className="col-lg-6 col-md-6 ">
               <div
-                className="tp-service-5-wrapper mb-30 wow fadeInUp"
+                className="tp-service-5-wrapper mb-30 wow  fadeInUp"
                 data-wow-delay=".5s"
                 data-wow-duration="1s"
               >
-                <div className="tp-service-5-item d-flex">
+                <div className="tp-service-5-item d-flex service-containers">
                   <div className="tp-service-5-thumb">
                     <img src="../img/service/service-5-img2.png" alt="" />
                   </div>
@@ -123,25 +135,21 @@ const HomePage = () => {
                       <a href="service-details.html">Creative Design Lab</a>
                     </h4>
                     <p className="tp-service-5-paragraph">
-                      System is a term used to refer to an zed collection and to
-                      symbols pro that may be used to oper
+                      Our design lab cultivates creativity through collaborative
+                      experimentation and interdisciplinary projects.
                     </p>
-                    <div className="tp-service-5-btn">
-                      <a href="service-details.html">
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-6">
+            <div className="col-lg-6 col-md-6 ">
               <div
                 className="tp-service-5-wrapper mb-30 wow fadeInUp"
                 data-wow-delay=".7s"
                 data-wow-duration="1s"
               >
-                <div className="tp-service-5-item d-flex">
+                <div className="tp-service-5-item d-flex  service-containers">
                   <div className="tp-service-5-thumb">
                     <img src="../img/service/service-5-img3.png" alt="" />
                   </div>
@@ -150,25 +158,22 @@ const HomePage = () => {
                       <a href="service-details.html">Research And Academia</a>
                     </h4>
                     <p className="tp-service-5-paragraph">
-                      System is a term used to refer to an zed collection and to
-                     
+                      Our platform bridges you to thought leaders, scholarly
+                      resources, and intellectual growth opportunities in the
+                      realm of research and academia.
                     </p>
-                    <div className="tp-service-5-btn">
-                      <a href="service-details.html">
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-lg-6 col-md-6 ">
               <div
-                className="tp-service-5-wrapper mb-30 wow fadeInUp "
+                className="tp-service-5-wrapper mb-30 wow   fadeInUp "
                 data-wow-delay=".9s"
                 data-wow-duration="1s"
               >
-                <div className="tp-service-5-item d-flex ">
+                <div className="tp-service-5-item d-flex service-containers">
                   <div className="tp-service-5-thumb">
                     <img src="../img/service/service-5-img4.png" alt="" />
                   </div>
@@ -177,14 +182,10 @@ const HomePage = () => {
                       <a href="service-details.html">Digital Marketing</a>
                     </h4>
                     <p className="tp-service-5-paragraph">
-                      System is a term used to refer to an zed collection and to
-                      symbols pro that may be used to oper
+                      Discover the art of digital marketing—master social media,
+                      SEO, content creation, and data analytics.
                     </p>
-                    <div className="tp-service-5-btn">
-                      <a href="service-details.html">
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </a>
-                    </div>
+                   
                   </div>
                 </div>
               </div>

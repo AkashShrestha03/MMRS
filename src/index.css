@@ -28,3 +28,11 @@
 .tp-portfolio-inner-subscribe-area{
   background-image: url("../public/img/portfolio/port-subs-inner-bg.jpg");
 }
+
+.tp-portfolio-breadcrumb-area{
+  background-image: url("../public/img/service/service-breadcrumb-bg.jpg");
+}
+
+.service-containers{
+  height: 350px;
+}

@@ -196,8 +196,8 @@ const About = () => {
                   <img src="../img/value/value-icon2.png" alt="" />
                 </div>
                 <div className="tp-value-content">
-                  <h4 className="tp-value-title">Our Vision</h4>
-                  <p className="tp-value-paragraph text-start">
+                  <h4 className="tp-value-title text-center">Our Vision</h4>
+                  <p className="tp-value-paragraph text-center">
                     Elevating individuals and businesses through technology and
                     strategy at affordable solutions.
                   </p>
@@ -250,7 +250,7 @@ const About = () => {
                   <img src="../img/value/value-icon1.png" alt="" />
                 </div>
                 <div className=" text-center">
-                  <h4 className="tp-value-title">Accessible Expertise</h4>
+                  <h4 className="tp-value-title text-center">Accessible Expertise</h4>
                   <p className="tp-value-paragraph">
                     We believe that quality services shouldn't come at a
                     premium. That's why our team of experts works tirelessly to
@@ -269,8 +269,8 @@ const About = () => {
                   <img src="../img/value/value-icon2.png" alt="" />
                 </div>
                 <div className="tp-value-content">
-                  <h4 className="tp-value-title">Unmatched Services</h4>
-                  <p className="tp-value-paragraph text-start">
+                  <h4 className="tp-value-title text-center">Unmatched Services</h4>
+                  <p className="tp-value-paragraph text-center">
                     We're not your typical service provider. With a range of
                     diverse services in hand, we're a one-stop-shop for all
                     your business needs.

@@ -11,6 +11,8 @@ import "../assets/css/spacing.css";
 import "../assets/css/swiper-bundle.css";
 import "../index.css";
 
+
+
 //Scripts
 import "bootstrap/dist/js/bootstrap.bundle";
 import "../assets/js/ajax-form";

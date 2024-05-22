@@ -81,8 +81,8 @@ const Contact = () => {
             </div>
           </div>
           <div className="tp-contact-inner-page-bottom">
-            <div className="row">
-              <div className="col-lg-4 col-md-6">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-4 col-md-6 ">
                 <div
                   className="tp-contact-inner-page-item mb-30 text-center wow fadeInUp"
                   data-wow-delay=".5s"
