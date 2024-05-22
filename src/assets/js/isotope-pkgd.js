@@ -436,11 +436,6 @@
         transitionDelay: r + "Delay",
       };
      
-   
-      // (d._create = function () {
-      //   (this._transn = { ingProperties: {}, clean: {}, onEnd: {} }),
-      //     this.css({ position: "absolute" });
-      // });
       (d.handleEvent = function (t) {
         var e = "on" + t.type;
         this[e] && this[e](t);
