@@ -5596,15 +5596,16 @@ body .ui-tooltip {
   color: var(--tp-common-white);
 }
 
-.header-sticky {
-  position: fixed;
+
+#header-sticky {
+  position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
   opacity: 1;
   visibility: visible;
   width: 100%;
-  z-index: 999;
+  z-index: 10;
   background-color: var(--tp-common-white);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   animation: 0.95s ease 0s normal forwards 1 running fadeInDown;

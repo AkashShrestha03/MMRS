@@ -36,3 +36,12 @@
 .service-containers{
   height: 350px;
 }
+
+.tp-project-3-thumb img{
+  object-fit: cover;
+  aspect-ratio: 3 /3;
+}
+.tp-project-3-thumb{
+  height: 300px;
+  width: 300px;  
+}

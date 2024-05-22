@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const RecentWorks = () => {
@@ -25,7 +26,9 @@ const RecentWorks = () => {
                   href="portfolio.html"
                   target="_blank"
                 >
-                  <span>View all Works</span>
+                  <span>
+                    <Link to={"/portfolio"}>View all Works</Link>
+                  </span>
                 </a>
               </div>
             </div>
@@ -33,7 +36,6 @@ const RecentWorks = () => {
         </div>
       </div>
       <div className="tp-project-5-bottom">
-        
         <div className="container-fluid tp-project-5-width">
           <div className="row">
             <div className="col-xl-3 col-lg-6 col-md-6">
@@ -122,21 +124,6 @@ const RecentWorks = () => {
                     </h4>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-8">
-              <div className="tp-service-solution tp-service-solution-2 text-center mt-80 wow fadeInUp">
-                <span className="tp-service-solution-text">
-                  IT Technology services built speacially for your business.
-                </span>
-                <a
-                  className="tp-service-solution-btn tp-service-solution-btn-2"
-                  href="contact.html"
-                >
-                  Get Solution
-                </a>
               </div>
             </div>
           </div>

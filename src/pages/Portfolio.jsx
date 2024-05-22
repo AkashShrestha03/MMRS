@@ -1,12 +1,10 @@
+import { Link } from "react-router-dom";
 
 
 const Portfolio = () => {
   return (
     <main>
-      <section
-        className="tp-portfolio-breadcrumb-area p-relative"
-        data-background="assets/img/portfolio/portfolio-inner-bg.jpg"
-      >
+      <section className="tp-portfolio-breadcrumb-area p-relative">
         <div className="tp-portfolio-breadcrumb-bg-shape">
           <img
             className="tp-portfolio-breadcrumb-bg-shape1"
@@ -25,7 +23,7 @@ const Portfolio = () => {
               <h2 className="tp-portfolio-breadcrumb-title">Our Portfolio</h2>
               <p className="tp-portfolio-breadcrumb-body">
                 <span>
-                  <a href="index-2.html">TECHUB</a>
+                  <a href="index-2.html">MMR</a>
                 </span>{" "}
                 <span className="spacing">/</span> PORTFOLIO
               </p>
@@ -44,7 +42,7 @@ const Portfolio = () => {
                 data-wow-duration="1s"
               >
                 <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">
-                  <img src="../img/project/project-5-img1.jpg" alt="" />
+                  <img src="../img/project/Portfolio-01.png" alt="" />
                   <div className="tp-project-3-down-content text-center">
                     <span>Solution</span>
                     <h4 className="tp-project-3-down-title">
@@ -61,11 +59,12 @@ const Portfolio = () => {
                 data-wow-duration="1s"
               >
                 <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">
-                  <img src="../img/project/project-5-img2.jpg" alt="" />
+                  <img src="../img/project/Portfolio-02.png" alt="" />
                   <div className="tp-project-3-down-content text-center">
-                    <span>Solution</span>
                     <h4 className="tp-project-3-down-title">
-                      <a href="portfolio-details.html">Data Storytelling</a>
+                      <a href="portfolio-details.html">
+                        E- Commerce Application
+                      </a>
                     </h4>
                   </div>
                 </div>
@@ -78,11 +77,12 @@ const Portfolio = () => {
                 data-wow-duration="1s"
               >
                 <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">
-                  <img src="../img/project/project-5-img3.jpg" alt="" />
+                  <img src="../img/project/Portfolio-03.png" alt="" />
                   <div className="tp-project-3-down-content text-center">
-                    <span>Solution</span>
                     <h4 className="tp-project-3-down-title">
-                      <a href="portfolio-details.html">Network Security</a>
+                      <a href="portfolio-details.html">
+                        E- Learning Application
+                      </a>
                     </h4>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ const Portfolio = () => {
                 data-wow-duration="1s"
               >
                 <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">
-                  <img src="../img/project/project-5-img4.jpg" alt="" />
+                  <img src="../img/project/Portfolio-04.png" alt="" />
                   <div className="tp-project-3-down-content text-center">
                     <span>Solution</span>
                     <h4 className="tp-project-3-down-title">
@@ -105,8 +105,6 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            
-           
           </div>
         </div>
       </section>
@@ -130,14 +128,11 @@ const Portfolio = () => {
             </div>
             <div className="col-xl-6 col-lg-5">
               <div className="tp-portfolio-inner-subsc-button d-flex justify-content-end mt-40 wow fadeInUp">
-                <a
-                  className="tp-btn tp-btn-white"
-                  rel="noreferrer"
-                  href="contact.html"
-                  target="_blank"
-                >
-                  <span>Get a Quote</span>
-                </a>
+                <Link to={"/contact"}  className="tp-btn tp-btn-white">
+                  <span>
+                    Get a Quote
+                  </span>
+                </Link>
               </div>
             </div>
           </div>

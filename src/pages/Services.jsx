@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 const Services = () => {
@@ -12,7 +13,7 @@ const Services = () => {
                 <div className="row">
                     <div className="tp-portfolio-breadcrumb-content">
                         <h2 className="tp-portfolio-breadcrumb-title tp-service-breadcrumb-title">Our Service</h2>
-                        <p className="tp-portfolio-breadcrumb-body tp-service-breadcrumb-body"><span><a href="index-2.html">MMR</a></span> <span className="spacing">/</span> Our Service</p>
+                        <p className="tp-portfolio-breadcrumb-body tp-service-breadcrumb-body"><span><Link to={"/"}>MMR</Link></span> <span className="spacing">/</span> Our Service</p>
                     </div>
                 </div>
             </div>
@@ -49,7 +50,7 @@ const Services = () => {
                                         <div className="tp-service-2-icon p-relative">
                                             <div className="tp-service-2-inner-item">
                                                 <span><i className="flaticon-it-service"></i></span>
-                                                <h3 className="tp-service-2-icon-title"><a href="service-details.html">Web Development</a></h3>
+                                                <h3 className="tp-service-2-icon-title"><a href="service-details.html">Website Development</a></h3>
                                             </div>
                                            
                                         </div>
