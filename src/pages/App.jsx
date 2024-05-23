@@ -13,6 +13,7 @@ import "../index.css";
 
 
 
+
 //Scripts
 import "bootstrap/dist/js/bootstrap.bundle";
 import "../assets/js/ajax-form";
@@ -33,10 +34,12 @@ import "../assets/js/vendor/waypoints";
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import { Outlet } from "react-router-dom";
+import Preloader from "../components/Preloader";
 
 const App = () => {
   return (
     <>
+    
       <Header />
       <Outlet />
       <Footer />

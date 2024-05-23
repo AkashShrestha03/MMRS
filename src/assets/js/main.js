@@ -103,13 +103,13 @@
 	
 	////////////////////////////////////////////////////
 	// 04. Offcanvas Js
-	(".tp-offcanvas-open-btn").on("click", function () {
-		(".offcanvas__area").addClass("offcanvas-opened");
-		(".body-overlay").addClass("opened");
+	$(".tp-offcanvas-open-btn").on("click", function () {
+		$(".offcanvas__area").addClass("offcanvas-opened");
+		$(".body-overlay").addClass("opened");
 	});
 	(".offcanvas-close-btn").on("click", function () {
-		(".offcanvas__area").removeClass("offcanvas-opened");
-		(".body-overlay").removeClass("opened");
+		$(".offcanvas__area").removeClass("offcanvas-opened");
+		$(".body-overlay").removeClass("opened");
 	});
 
 
@@ -146,7 +146,7 @@
 	////////////////////////////////////////////////////
 	// 07. Body overlay Js
 	(".body-overlay").on("click", function () {
-		(".offcanvas__area").removeClass("offcanvas-opened");
+		(".offcanvas-area").removeClass("offcanvas-opened");
 		(".tp-search-area").removeClass("opened");
 		(".cartmini__area").removeClass("cartmini-opened");
 		(".body-overlay").removeClass("opened");

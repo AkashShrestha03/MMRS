@@ -53,6 +53,8 @@ const Testimonials = () => {
                       className="tp-testimonial-tab-wrapper  tab-content"
                       id="v-pills-tabContent2"
                     >
+                      {/* Review 1 */}
+
                       <div
                         className="tab-pane fade show active"
                         id="v-pills-man1"
@@ -97,6 +99,7 @@ const Testimonials = () => {
                           </div>
                         </div>
                       </div>
+                      {/* Review 2 */}
                       <div
                         className="tab-pane fade"
                         id="v-pills-man2"
@@ -139,6 +142,7 @@ const Testimonials = () => {
                           </div>
                         </div>
                       </div>
+                      {/* Review 3 */}
                       <div
                         className="tab-pane fade"
                         id="v-pills-man3"
@@ -183,18 +187,63 @@ const Testimonials = () => {
                           </div>
                         </div>
                       </div>
+
+                      {/* Review 4 */}
+                      <div
+                        className="tab-pane fade"
+                        id="v-pills-man4"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-man4-tab"
+                      >
+                        <div className="tp-client-review p-relative">
+                          <div className="tp-client-caption">
+                            <img
+                              src="../img/testimonial/testi-star.png"
+                              alt=""
+                            />
+                            <p>
+                              Our business experts come businesses of all shapes
+                              and sizes, but they share one thing in common - an
+                              commitment to promoting business and enabling
+                              others to do the same quantity full design that
+                              creates problem solving systmes
+                            </p>
+                          </div>
+                          <div className="tp-client-inner d-flex">
+                            <div className="tp-client-image">
+                              <img
+                                src="../img/testimonial/testi-5-22.png"
+                                alt="client"
+                              />
+                            </div>
+                            <div className="tp-client-nav-info">
+                              <h5 className="tp-client-nav-title">Rasalina</h5>
+                              <span className="tp-client-nav-designation">
+                                CLIENT OF COMPANY
+                              </span>
+                            </div>
+                          </div>
+                          <div className="tp-testimonial-box-shape">
+                            <img
+                              src="assets/img/testimonial/testi-box-shape.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
                   <div
-                    className="nav tp-testimonial-list wow fadeInRight"
+                    className="nav overflow-scroll no-scrollbar  tp-testimonial-list wow fadeInRight"
                     id="v-pills-tab2"
                     role="tablist"
                     aria-orientation="vertical"
+                    style={{ height: "362px" }}
                   >
                     <button
-                      className="tp-testimonial-btn tp-testimonial-item d-flex nav-link active"
+                      className="tp-testimonial-btn tp-testimonial-item d-flex active nav-link"
                       id="v-pills-man1-tab"
                       data-bs-toggle="pill"
                       data-bs-target="#v-pills-man1"
@@ -210,8 +259,9 @@ const Testimonials = () => {
                         />
                       </span>
                     </button>
+
                     <button
-                      className="tp-testimonial-btn tp-testimonial-item d-flex nav-link"
+                      className="tp-testimonial-btn tp-testimonial-item nav-link"
                       id="v-pills-man2-tab"
                       data-bs-toggle="pill"
                       data-bs-target="#v-pills-man2"
@@ -228,7 +278,7 @@ const Testimonials = () => {
                       </span>
                     </button>
                     <button
-                      className="tp-testimonial-btn tp-testimonial-item tp-testimonial-item-3 d-flex nav-link"
+                      className="tp-testimonial-btn tp-testimonial-item tp-testimonial-item nav-link"
                       id="v-pills-man3-tab"
                       data-bs-toggle="pill"
                       data-bs-target="#v-pills-man3"
@@ -237,9 +287,26 @@ const Testimonials = () => {
                       aria-controls="v-pills-man3"
                       aria-selected="false"
                     >
-                      <span className="tp-testimonial-tab-btn m-0">
+                      <span className="tp-testimonial-tab-btn mb-4">
                         <img
                           src="../img/testimonial/testi-5-3.png"
+                          alt="client"
+                        />
+                      </span>
+                    </button>
+                    <button
+                      className="tp-testimonial-btn tp-testimonial-item-3 d-flex nav-link"
+                      id="v-pills-man4-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-man4"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-man4"
+                      aria-selected="true"
+                    >
+                      <span className="tp-testimonial-tab-btn mt-4">
+                        <img
+                          src="../img/testimonial/testi-5-1.png"
                           alt="client"
                         />
                       </span>

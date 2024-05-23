@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
                 <div className="tp-about-inr-heading-content text-center">
                   <span className="tp-about-inr-heading-subtitle">
                     <span>
-                      <a href="index-2.html">MMR</a>{" "}
+                      <Link to={"/"}>MMR</Link>{" "}
                       <span className="spacing">/</span>
                     </span>{" "}
                     About us

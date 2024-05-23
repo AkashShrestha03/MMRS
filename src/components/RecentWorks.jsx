@@ -20,16 +20,19 @@ const RecentWorks = () => {
             </div>
             <div className="col-xl-6 col-lg-4 col-md-4">
               <div className="tp-project-5-top-btn d-flex justify-content-end mt-100 wow fadeInUp">
-                <a
+                <Link
                   className="tp-btn"
-                  rel="noreferrer"
-                  href="portfolio.html"
-                  target="_blank"
+                  onClick={() =>
+                    window.scroll({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth",
+                    })
+                  }
+                  to={"/portfolio"}
                 >
-                  <span>
-                    <Link to={"/portfolio"}>View all Works</Link>
-                  </span>
-                </a>
+                  <span>View all Works</span>
+                </Link>
               </div>
             </div>
           </div>

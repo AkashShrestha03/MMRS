@@ -1,93 +1,157 @@
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
+
 const Header = () => {
+  const [openNav, setOpenNav] = useState(false)
+  
   return (
     <>
-      <div class="tpoffcanvas-area">
-        <div class="tpoffcanvas">
-          <div class="tpoffcanvas__close-btn">
-            <button class="close-btn">
-              <i class="fal fa-times"></i>
-            </button>
-          </div>
-          <div className="logo"></div>
-          <div class="tpoffcanvas__title">
-            <p>
-              Techub is the partner of choice for many of the world’s leading
-              enterprises. We help businesses development.
-            </p>
-          </div>
-          <div class="tp-main-menu-mobile d-xl-none ">
-            <ul>
-              <li>
-                <NavLink to={""} className="color-active" href="index-2.html">
-                  Home
-                </NavLink>
-              </li>
-              <li className="has-dropdown">
-                <NavLink to={"about"}>About Us</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/portfolio"}>Portfolio</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/services"}>Services</NavLink>
-              </li>
-
-              <li>
-                <NavLink to={"/contact"}>Contact Us</NavLink>
-              </li>
-            </ul>
-          </div>
-          <div class="tpoffcanvas__contact-info">
-            <div class="tpoffcanvas__contact-title">
-              <h5>Contact us</h5>
-            </div>
-            <ul>
-              <li>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:techubinfo@mail.com">
-                  <span class="__cf_email__">contact@mmsolutions.co.in</span>
-                </a>
-              </li>
-              <li>
-                <i class="fa-solid fa-phone-flip"></i>
-                <a href="tel:+48555223224"> +(91) 870 0125 888</a>
-              </li>
-            </ul>
-          </div>
-          <div class="tpoffcanvas__input">
-            <div class="tpoffcanvas__input-title">
-              <h4>Get Update</h4>
-            </div>
-            <form action="#">
-              <div class="p-relative">
-                <input type="text" placeholder="Enter mail" />
-                <button>
-                  <i class="fas fa-paper-plane"></i>
+      {openNav && (
+        <>
+          <div class="tpoffcanvas-area  ">
+            <div class="tpoffcanvas">
+              <div class="tpoffcanvas__close-btn">
+                <button class="close-btn" onClick={() => setOpenNav(false)}>
+                  <i class="fal fa-times"></i>
                 </button>
               </div>
-            </form>
-          </div>
-          <div class="tpoffcanvas__social">
-            <div class="social-icon">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-pinterest-p"></i>
-              </a>
+              <div className="logo"></div>
+              <div class="tpoffcanvas__title">
+                <p>
+                  Techub is the partner of choice for many of the world’s
+                  leading enterprises. We help businesses development.
+                </p>
+              </div>
+              <div class="tp-main-menu-mobile d-xl-none ">
+                <ul>
+                  <li onClick={() => setOpenNav(false)}>
+                    <NavLink
+                      to={"/"}
+                      className="color-active"
+                      onClick={() =>
+                        window.scroll({
+                          top: 0,
+                          left: 0,
+                          behavior: "smooth",
+                        })
+                      }
+                    >
+                      Home
+                    </NavLink>
+                  </li>
+                  <li onClick={() => setOpenNav(false)}>
+                    <NavLink
+                      to={"about"}
+                      onClick={() =>
+                        window.scroll({
+                          top: 0,
+                          left: 0,
+                          behavior: "smooth",
+                        })
+                      }
+                    >
+                      About Us
+                    </NavLink>
+                  </li>
+                  <li onClick={() => setOpenNav(false)}>
+                    <NavLink
+                      to={"/portfolio"}
+                      onClick={() =>
+                        window.scroll({
+                          top: 0,
+                          left: 0,
+                          behavior: "smooth",
+                        })
+                      }
+                    >
+                      Portfolio
+                    </NavLink>
+                  </li>
+                  <li onClick={() => setOpenNav(false)}>
+                    <NavLink
+                      to={"/services"}
+                      onClick={() =>
+                        window.scroll({
+                          top: 0,
+                          left: 0,
+                          behavior: "smooth",
+                        })
+                      }
+                    >
+                      Services
+                    </NavLink>
+                  </li>
+
+                  <li onClick={() => setOpenNav(false)}>
+                    <NavLink
+                      to={"/contact"}
+                      onClick={() =>
+                        window.scroll({
+                          top: 0,
+                          left: 0,
+                          behavior: "smooth",
+                        })
+                      }
+                    >
+                      Contact Us
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+              <div class="tpoffcanvas__contact-info">
+                <div class="tpoffcanvas__contact-title">
+                  <h5>Contact us</h5>
+                </div>
+                <ul>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:techubinfo@mail.com">
+                      <span class="__cf_email__">
+                        contact@mmsolutions.co.in
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <a href="tel:+48555223224"> +(91) 870 0125 888</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tpoffcanvas__input">
+                <div class="tpoffcanvas__input-title">
+                  <h4>Get Update</h4>
+                </div>
+                <form action="#">
+                  <div class="p-relative">
+                    <input type="text" placeholder="Enter mail" />
+                    <button>
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="tpoffcanvas__social">
+                <div class="social-icon">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="body-overlay"></div>
+        
+        </>
+      )}
 
       <header className="tp-header-height">
         <div id="header-sticky" className="tp-header-bottom">
@@ -103,25 +167,75 @@ const Header = () => {
                       <ul>
                         <li>
                           <NavLink
-                            to={""}
+                            to={"/"}
                             className="color-active"
-                            href="index-2.html"
+                            onClick={() =>
+                              window.scroll({
+                                top: 0,
+                                left: 0,
+                                behavior: "smooth",
+                              })
+                            }
                           >
                             Home
                           </NavLink>
                         </li>
                         <li className="has-dropdown">
-                          <NavLink to={"about"}>About Us</NavLink>
+                          <NavLink
+                            to={"about"}
+                            onClick={() =>
+                              window.scroll({
+                                top: 0,
+                                left: 0,
+                                behavior: "smooth",
+                              })
+                            }
+                          >
+                            About Us
+                          </NavLink>
                         </li>
                         <li>
-                          <NavLink to={"/portfolio"}>Portfolio</NavLink>
+                          <NavLink
+                            to={"/portfolio"}
+                            onClick={() =>
+                              window.scroll({
+                                top: 0,
+                                left: 0,
+                                behavior: "smooth",
+                              })
+                            }
+                          >
+                            Portfolio
+                          </NavLink>
                         </li>
                         <li>
-                          <NavLink to={"/services"}>Services</NavLink>
+                          <NavLink
+                            to={"/services"}
+                            onClick={() =>
+                              window.scroll({
+                                top: 0,
+                                left: 0,
+                                behavior: "smooth",
+                              })
+                            }
+                          >
+                            Services
+                          </NavLink>
                         </li>
 
                         <li>
-                          <NavLink to={"/contact"}>Contact Us</NavLink>
+                          <NavLink
+                            to={"/contact"}
+                            onClick={() =>
+                              window.scroll({
+                                top: 0,
+                                left: 0,
+                                behavior: "smooth",
+                              })
+                            }
+                          >
+                            Contact Us
+                          </NavLink>
                         </li>
                       </ul>
                     </nav>
@@ -130,17 +244,25 @@ const Header = () => {
                 <div className="col-xl-4 col-lg-8 col-md-8 col-6">
                   <div className="tp-header-right d-flex justify-content-end align-items-center">
                     <div className="tp-header-button d-none d-lg-block">
-                      <a
+                      <Link
+                        to={"/contact"}
+                        onClick={() =>
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          })
+                        }
                         className="tp-header-btn"
-    
                       >
-                        <span>
-                          <Link to={"/contact"}>Get a Quote</Link>
-                        </span>
-                      </a>
+                        <span>Get a Quote</span>
+                      </Link>
                     </div>
                     <div class="tp-header-menu-ber">
-                      <button class="d-xl-none tp-header-5-bar tp-menu-bar">
+                      <button
+                        class="d-xl-none tp-header-5-bar tp-menu-bar"
+                        onClick={() => setOpenNav(true)}
+                      >
                         <i class="fa-solid fa-bars"></i>
                       </button>
                     </div>

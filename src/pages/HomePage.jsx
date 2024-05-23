@@ -4,8 +4,12 @@ import RecentWorks from "../components/RecentWorks";
 import Testimonials from "../components/Testimonials";
 //Animation
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const HomePage = () => {
+
+  const targetRef = useRef(null)
+
   return (
     <main className="bg-white">
       <section className="tp-slider-5-area p-relative z-index-1 fix">
@@ -53,9 +57,11 @@ const HomePage = () => {
                   <div className="tp-slider-5-btn-box d-inline-flex wow fadeInUp">
                     <a
                       className="tp-btn"
-                      rel="noreferrer"
-                      href="contact.html"
-                      target="_blank"
+                      onClick={() =>
+                        targetRef.current?.scrollIntoView({
+                          behavior: "smooth",
+                        })
+                      }
                     >
                       <span>Get Started</span>
                     </a>
@@ -86,6 +92,7 @@ const HomePage = () => {
       <section
         className="tp-service-5-area pt-190 pb-90 p-relative fix"
         id="services"
+        ref={targetRef}
       >
         <div className="container">
           <div className="row">
@@ -93,7 +100,7 @@ const HomePage = () => {
               <h3 className="tp-section-5-title">Services</h3>
             </div>
           </div>
-          <div className="row">
+          <div className="row" id="get_started">
             <div className="col-lg-6 col-md-6 ">
               <div
                 className="tp-service-5-wrapper mb-30 wow fadeInUp "
@@ -115,7 +122,6 @@ const HomePage = () => {
                       engineering expertise to drive innovative solutions across
                       software development and hardware design.
                     </p>
-                   
                   </div>
                 </div>
               </div>
@@ -138,7 +144,6 @@ const HomePage = () => {
                       Our design lab cultivates creativity through collaborative
                       experimentation and interdisciplinary projects.
                     </p>
-                    
                   </div>
                 </div>
               </div>
@@ -162,7 +167,6 @@ const HomePage = () => {
                       resources, and intellectual growth opportunities in the
                       realm of research and academia.
                     </p>
-                    
                   </div>
                 </div>
               </div>
@@ -185,7 +189,6 @@ const HomePage = () => {
                       Discover the art of digital marketing—master social media,
                       SEO, content creation, and data analytics.
                     </p>
-                   
                   </div>
                 </div>
               </div>
@@ -355,9 +358,14 @@ const HomePage = () => {
               <div className="tp-chose-us-5-btn">
                 <Link
                   className="tp-btn"
-                  rel="noreferrer"
+                  onClick={() =>
+                    window.scroll({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth",
+                    })
+                  }
                   to={"/contact"}
-                  target="_blank"
                 >
                   <span>Contact Us</span>
                 </Link>

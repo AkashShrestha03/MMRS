@@ -23,7 +23,18 @@ const Portfolio = () => {
               <h2 className="tp-portfolio-breadcrumb-title">Our Portfolio</h2>
               <p className="tp-portfolio-breadcrumb-body">
                 <span>
-                  <a href="index-2.html">MMR</a>
+                  <Link
+                    to={"/"}
+                    onClick={() =>
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      })
+                    }
+                  >
+                    MMR
+                  </Link>
                 </span>{" "}
                 <span className="spacing">/</span> PORTFOLIO
               </p>
@@ -128,10 +139,18 @@ const Portfolio = () => {
             </div>
             <div className="col-xl-6 col-lg-5">
               <div className="tp-portfolio-inner-subsc-button d-flex justify-content-end mt-40 wow fadeInUp">
-                <Link to={"/contact"}  className="tp-btn tp-btn-white">
-                  <span>
-                    Get a Quote
-                  </span>
+                <Link
+                  to={"/contact"}
+                  onClick={() =>
+                    window.scroll({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth",
+                    })
+                  }
+                  className="tp-btn tp-btn-white"
+                >
+                  <span>Get a Quote</span>
                 </Link>
               </div>
             </div>

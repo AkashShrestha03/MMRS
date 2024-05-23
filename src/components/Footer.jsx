@@ -1,4 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
                 data-wow-duration="1s"
               >
                 <div className="tp-footer-logo">
-                  <div >
+                  <div>
                     <a href="">
                       <div className="logo"></div>
                     </a>
@@ -24,18 +25,18 @@ const Footer = () => {
                   <p>sales@mmrsolutions.co.in</p>
                 </div>
                 <div className="tp-footer-social">
-                  <a href="#">
+                  <Link to={"/"}>
                     <i className="flaticon-facebook-circular-logo"></i>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to={"/"}>
                     <i className="flaticon-instagram"></i>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to={"/"}>
                     <i className="flaticon-whatsapp"></i>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to={"/"}>
                     <i className="flaticon-pinterest-logo "></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -48,15 +49,48 @@ const Footer = () => {
                 <div className="tp-footer-list ">
                   <ul>
                     <li>
-                      <a href="index-2.html">Home</a>
+                      <Link
+                        to={"/"}
+                        onClick={() =>
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          })
+                        }
+                      >
+                        Home
+                      </Link>
                     </li>
 
                     <li>
-                      <a href="about.html">About Us</a>
+                      <Link
+                        to={"/about"}
+                        onClick={() =>
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          })
+                        }
+                      >
+                        About Us
+                      </Link>
                     </li>
 
                     <li>
-                      <a href="service.html">Our Services</a>
+                      <Link
+                        to={"/services"}
+                        onClick={() =>
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          })
+                        }
+                      >
+                        Our Services
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -71,11 +105,33 @@ const Footer = () => {
                 <div className="tp-footer-list">
                   <ul>
                     <li>
-                      <a href="portfolio.html">Portfolio</a>
+                      <Link
+                        to={"/portfolio"}
+                        onClick={() =>
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          })
+                        }
+                      >
+                        Portfolio
+                      </Link>
                     </li>
 
                     <li>
-                      <a href="contact.html">Contact Us</a>
+                      <Link
+                        to={"/contact"}
+                        onClick={() =>
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          })
+                        }
+                      >
+                        Contact Us
+                      </Link>
                     </li>
                   </ul>
                 </div>
