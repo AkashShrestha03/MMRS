@@ -76,3 +76,9 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.loader-brand-icon img{
+  height: 99px;
+  width: 99px;
+  border-radius: 50%;
+}

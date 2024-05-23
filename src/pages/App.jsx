@@ -35,11 +35,14 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import { Outlet } from "react-router-dom";
 import Preloader from "../components/Preloader";
+import { useState } from "react";
 
 const App = () => {
+  const [loader, setLoader] = useState(true);
   return (
     <>
-    
+      {setTimeout(() => setLoader(false), 1000)}
+      {loader && <Preloader></Preloader>}
       <Header />
       <Outlet />
       <Footer />

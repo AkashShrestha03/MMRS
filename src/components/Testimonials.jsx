@@ -8,7 +8,7 @@ const Testimonials = () => {
           <div className="col-xl-5 col-lg-5">
             <div className="tp-testimonial-wrapper wow fadeInLeft">
               <div className="tp-section-title-wrapper mb-45">
-                <span className="tp-section-subtitle">CLIENTs feedback</span>
+                {/* <span className="tp-section-subtitle">CLIENTs feedback</span> */}
                 <h3 className="tp-section-title">
                   What our clients <br />
                   say ?{" "}
@@ -23,8 +23,8 @@ const Testimonials = () => {
                   </div>
                   <div className="tp-testimonial-left-content">
                     <p>
-                      Vitae nec loreum ipsum dollart set prenur <br />
-                      amet due to funcktion welling suza
+                      I was wary of using a new service for my digital demands,
+                      but this company well beyond my hopes.
                     </p>
                   </div>
                 </div>
@@ -36,8 +36,8 @@ const Testimonials = () => {
                   </div>
                   <div className="tp-testimonial-left-content">
                     <p>
-                      Vitae nec loreum ipsum dollart set prenur <br />
-                      amet due to funcktion welling suza
+                      They offered excellent solutions for a portion of what
+                      other companies charged.
                     </p>
                   </div>
                 </div>
@@ -68,11 +68,10 @@ const Testimonials = () => {
                               alt=""
                             />
                             <p>
-                              Our business experts come businesses of all shapes
-                              and sizes, but they share one thing in common - an
-                              commitment to promoting business and enabling
-                              others to do the same quantity full design that
-                              creates problem solving systmes
+                              I was astounded by this service firm's level of
+                              expertise and attention to detail. Their
+                              innovative ideas aided me in taking my company to
+                              the next level.
                             </p>
                           </div>
                           <div className="tp-client-inner d-flex">
@@ -113,11 +112,10 @@ const Testimonials = () => {
                               alt=""
                             />
                             <p>
-                              Our business experts come businesses of all shapes
-                              and sizes, but they share one thing in common - an
-                              commitment to promoting business and enabling
-                              others to do the same quantity full design that
-                              creates problem solving systmes
+                              I've been using this service for a while now, and
+                              I must say that I am impressed with their
+                              commitment to providing high-quality services at
+                              reasonable prices.Strongly recommended!
                             </p>
                           </div>
                           <div className="tp-client-inner d-flex">
@@ -156,11 +154,11 @@ const Testimonials = () => {
                               alt=""
                             />
                             <p>
-                              Our business experts come businesses of all shapes
-                              and sizes, but they share one thing in common - an
-                              commitment to promoting business and enabling
-                              others to do the same quantity full design that
-                              creates problem solving systmes
+                              I was struggling with my online presence as a
+                              non-technical person until I found this firm.
+                              Their content authoring and digital marketing
+                              services have assisted me in increasing awareness
+                              and expanding my business.
                             </p>
                           </div>
                           <div className="tp-client-inner d-flex">
@@ -202,11 +200,52 @@ const Testimonials = () => {
                               alt=""
                             />
                             <p>
-                              Our business experts come businesses of all shapes
-                              and sizes, but they share one thing in common - an
-                              commitment to promoting business and enabling
-                              others to do the same quantity full design that
-                              creates problem solving systmes
+                              This firm's team is truly innovative and
+                              collaborative. They collaborated extensively with
+                              me to create a custom solution that was ideal for
+                              my company's requirements.
+                            </p>
+                          </div>
+                          <div className="tp-client-inner d-flex">
+                            <div className="tp-client-image">
+                              <img
+                                src="../img/testimonial/testi-5-22.png"
+                                alt="client"
+                              />
+                            </div>
+                            <div className="tp-client-nav-info">
+                              <h5 className="tp-client-nav-title">Rasalina</h5>
+                              <span className="tp-client-nav-designation">
+                                CLIENT OF COMPANY
+                              </span>
+                            </div>
+                          </div>
+                          <div className="tp-testimonial-box-shape">
+                            <img
+                              src="assets/img/testimonial/testi-box-shape.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      {/* Review 5 */}
+                      <div
+                        className="tab-pane fade"
+                        id="v-pills-man5"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-man5-tab"
+                      >
+                        <div className="tp-client-review p-relative">
+                          <div className="tp-client-caption">
+                            <img
+                              src="../img/testimonial/testi-star.png"
+                              alt=""
+                            />
+                            <p>
+                              This company's innovative solutions have helped me
+                              set my business apart from rivals. It's a pleasure
+                              to work with their team, and they genuinely care
+                              about their customers.
                             </p>
                           </div>
                           <div className="tp-client-inner d-flex">
@@ -305,6 +344,23 @@ const Testimonials = () => {
                       aria-selected="true"
                     >
                       <span className="tp-testimonial-tab-btn mt-4">
+                        <img
+                          src="../img/testimonial/testi-5-1.png"
+                          alt="client"
+                        />
+                      </span>
+                    </button>
+                    <button
+                      className="tp-testimonial-btn tp-testimonial-item-3 d-flex nav-link"
+                      id="v-pills-man5-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-man5"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-man5"
+                      aria-selected="true"
+                    >
+                      <span className="tp-testimonial-tab-btn">
                         <img
                           src="../img/testimonial/testi-5-1.png"
                           alt="client"

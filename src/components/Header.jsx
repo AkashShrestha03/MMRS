@@ -17,12 +17,7 @@ const Header = () => {
                 </button>
               </div>
               <div className="logo"></div>
-              <div class="tpoffcanvas__title">
-                <p>
-                  Techub is the partner of choice for many of the world’s
-                  leading enterprises. We help businesses development.
-                </p>
-              </div>
+             
               <div class="tp-main-menu-mobile d-xl-none ">
                 <ul>
                   <li onClick={() => setOpenNav(false)}>

@@ -242,7 +242,7 @@ const HomePage = () => {
             <div className="col-xl-6 col-lg-6">
               <div className="tp-management-5-wrapper wow fadeInUp">
                 <div className="tp-section-5-title-wrapper mb-50">
-                  <span className="tp-section-subtitle">MMR Management</span>
+                 
                   <h3 className="tp-section-5-title management-5">
                     Your partner for <br />
                     software <span>Innovation</span>
