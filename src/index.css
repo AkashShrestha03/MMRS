@@ -1,3 +1,7 @@
+*{
+  scroll-behavior: smooth;
+}
+
 .logo{
   background-image: url("../public/img/logo/MMR-logo.jpg") !important;
   background-size: cover;
@@ -25,6 +29,8 @@
  
 }
 
+/* Portfolio */
+
 .tp-portfolio-inner-subscribe-area{
   background-image: url("../public/img/portfolio/port-subs-inner-bg.jpg");
 }
@@ -46,39 +52,56 @@
   width: 300px;  
 }
 
-.swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+/* Testimonials */
 
     .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
 .no-scrollbar {
-
+  overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.tp-testimonial-list{
+  height: 352px;
+  width: 140px;
+}
+
+@media (max-width: 567px) {
+  .tp-testimonial-list {
+    height: 140px;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
+
+/* Loader */
 
 .loader-brand-icon img{
   height: 99px;
   width: 99px;
   border-radius: 50%;
+}
+
+/* Services */
+
+.services-cards{
+  transition: 0.8s;
+}
+
+.tp-service-2-icon{
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.tp-service-2-icon:hover{
+  transform: scale(1.06);
+}
+
+/* Footer */
+
+@media (max-width: 767px) {
+ 
 }

@@ -1,5 +1,3 @@
-
-
 const Testimonials = () => {
   return (
     <section className="tp-testimonial-area tp-testimonial-area-2">
@@ -170,7 +168,7 @@ const Testimonials = () => {
                             </div>
                             <div className="tp-client-nav-info">
                               <h5 className="tp-client-nav-title">
-                                Belal Mahmud
+                                Manas Singh
                               </h5>
                               <span className="tp-client-nav-designation">
                                 Designer
@@ -214,7 +212,7 @@ const Testimonials = () => {
                               />
                             </div>
                             <div className="tp-client-nav-info">
-                              <h5 className="tp-client-nav-title">Rasalina</h5>
+                              <h5 className="tp-client-nav-title">Ravi Shankar Gupta</h5>
                               <span className="tp-client-nav-designation">
                                 CLIENT OF COMPANY
                               </span>
@@ -256,7 +254,7 @@ const Testimonials = () => {
                               />
                             </div>
                             <div className="tp-client-nav-info">
-                              <h5 className="tp-client-nav-title">Rasalina</h5>
+                              <h5 className="tp-client-nav-title">Priyanka Trivedi</h5>
                               <span className="tp-client-nav-designation">
                                 CLIENT OF COMPANY
                               </span>
@@ -275,11 +273,8 @@ const Testimonials = () => {
                 </div>
                 <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
                   <div
-                    className="nav overflow-scroll no-scrollbar  tp-testimonial-list wow fadeInRight"
+                    className="nav no-scrollbar  tp-testimonial-list wow fadeInRight"
                     id="v-pills-tab2"
-                    role="tablist"
-                    aria-orientation="vertical"
-                    style={{ height: "362px" }}
                   >
                     <button
                       className="tp-testimonial-btn tp-testimonial-item d-flex active nav-link"
@@ -326,7 +321,7 @@ const Testimonials = () => {
                       aria-controls="v-pills-man3"
                       aria-selected="false"
                     >
-                      <span className="tp-testimonial-tab-btn mb-4">
+                      <span className="tp-testimonial-tab-btn ">
                         <img
                           src="../img/testimonial/testi-5-3.png"
                           alt="client"
@@ -343,7 +338,7 @@ const Testimonials = () => {
                       aria-controls="v-pills-man4"
                       aria-selected="true"
                     >
-                      <span className="tp-testimonial-tab-btn mt-4">
+                      <span className="tp-testimonial-tab-btn ">
                         <img
                           src="../img/testimonial/testi-5-1.png"
                           alt="client"
@@ -376,6 +371,6 @@ const Testimonials = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Testimonials
+export default Testimonials;

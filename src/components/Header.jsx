@@ -16,8 +16,13 @@ const Header = () => {
                   <i class="fal fa-times"></i>
                 </button>
               </div>
-              <div className="logo"></div>
-
+              <Link
+                to={"/"}
+                onClick={() => setOpenNav(false)}
+                
+              >
+                <div className="logo"></div>
+              </Link>
               <div class="tp-main-menu-mobile d-xl-none  ">
                 <ul>
                   <li onClick={() => setOpenNav(false)}>
@@ -147,7 +152,9 @@ const Header = () => {
             <div className="container-fluid">
               <div className="row align-items-center">
                 <div className="col-xl-2 col-lg-4 col-md-4 col-6">
-                  <div className="logo"></div>
+                  <Link to={"/"} >
+                    <div className="logo"></div>
+                  </Link>
                 </div>
                 <div className="col-xl-6 d-none d-xl-block">
                   <div className="main-menu  main-menu-5">

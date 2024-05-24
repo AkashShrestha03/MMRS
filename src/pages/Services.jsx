@@ -12,7 +12,7 @@ const Services = () => {
       <main>
         <section
           className="tp-portfolio-breadcrumb-area tp-service-inner-breadcrumb-area mb-110"
-          data-background="assets/img/service/service-breadcrumb-bg.jpg"
+          
         >
           <div className="container">
             <div className="row">
@@ -24,7 +24,7 @@ const Services = () => {
                   <span>
                     <Link to={"/"}>MMR</Link>
                   </span>{" "}
-                  <span className="spacing">/</span> Our Service
+                  <span className="spacing">/</span> Our Services
                 </p>
               </div>
             </div>
@@ -33,20 +33,20 @@ const Services = () => {
 
         <section className="tp-service-2-area tp-service-inner-main-area tp-service-inner-main-area-2 p-relative fix">
           <div className="container">
-            <div className="row gy-5">
+            <div className="row gy-5  services-cards">
               <div className="col-xl-4 col-lg-6 col-md-6 ">
                 <div
-                  className="tp-2-service-item mb-170 wow  fadeInUp"
+                  className="tp-2-service-item mb-170 wow fadeInUp"
                   data-wow-delay=".3s"
                   data-wow-duration="1s"
                 >
                   <div className="tp-service-2-item-wrapper  tp-service-2-item-wrapper-2">
                     <div className="tp-service-2-thum  p-relative">
                       {/* <img src="../img/service/service-2-img1.jpg" alt=""/> */}
-                      <div className="tp-service-2-box  text-center">
+                      <div className="tp-service-2-box  text-center ">
                         {/* Remove arrow */}
-                        {/* Hover scale */}
-                        <div className="tp-service-2-icon shadow p-relative">
+                       
+                        <div className="tp-service-2-icon p-relative border">
                           <div className="tp-service-2-inner-item">
                             <span>
                               <i className="flaticon-it-service"></i>

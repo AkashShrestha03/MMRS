@@ -8641,20 +8641,18 @@ body .ui-tooltip {
 }
 .tp-service-2-icon::before {
   position: absolute;
-  content: "";
+ 
   height: 20px;
-  width: 2px;
+  
   background: var(--tp-text-skill);
-  top: 6px;
-  left: 6px;
+ 
 }
 .tp-service-2-icon::after {
-  content: "";
+ 
   position: absolute;
   width: 20px;
-  height: 2px;
-  left: 6px;
-  top: 6px;
+  
+  
   background: var(--tp-text-skill);
 }
 .tp-service-2-inner-item {
