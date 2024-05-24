@@ -47,12 +47,20 @@
 }
 
 .tp-project-3-thumb img{
-  object-fit: cover;
-  aspect-ratio: 3 /3;
+  height: 250px;
+  width: 352px;
+  aspect-ratio: 3 / 2;
 }
 .tp-project-3-thumb{
   height: 300px;
   width: 300px;  
+}
+
+.tp-project-5-thumb img{
+  height: 250px;
+  width: 352px;
+  
+  aspect-ratio: 3 / 2;
 }
 
 /* Testimonials */
@@ -100,15 +108,8 @@
 
 /* Services */
 
-.services-cards{
+.tp-service-2:hover{
   transition: 0.8s;
-}
-
-.tp-service-2-icon{
-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-
-}
-.tp-service-2-icon:hover{
   transform: scale(1.06);
 }
 
@@ -118,22 +119,10 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
 }
 
-.tp-service-list{
-  display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: antiquewhite;
-  z-index: 99;
-}
 
 /* Footer */
 
-@media (max-width: 767px) {
- 
-}
+
 
 
 /* About */

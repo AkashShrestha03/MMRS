@@ -53,16 +53,12 @@ const RecentWorks = () => {
                   data-wow-duration="1s"
                 >
                   <div className="tp-project-5-thumb p-relative">
-                    <img src="../img/project/project-5-img1.jpg" alt="" />
-                    <div className="tp-project-5-icon">
-                      <a href="portfolio-details.html">
-                        <i className="fa-thin fa-plus"></i>
-                      </a>
-                    </div>
+                    <img src="../img/portfolio/Portfolio-2.png" alt="" />
+                    
                     <div className="tp-project-5-content text-center">
-                      <span>Building</span>
+                     
                       <h4 className="tp-project-5-title">
-                        <a href="portfolio-details.html">Social media app</a>
+                        <a href="#">E - Learning App</a>
                       </h4>
                     </div>
                   </div>
@@ -73,16 +69,12 @@ const RecentWorks = () => {
               <ReactWOW animation="fadeInUp" delay="0.5s" duration="1s">
                 <div className="tp-project-5-wrapper ">
                   <div className="tp-project-5-thumb p-relative">
-                    <img src="../img/project/project-5-img2.jpg" alt="" />
-                    <div className="tp-project-5-icon">
-                      <a href="portfolio-details.html">
-                        <i className="fa-thin fa-plus"></i>
-                      </a>
-                    </div>
+                    <img src="../img/portfolio/Portfolio-3.png" alt="" />
+                    
                     <div className="tp-project-5-content text-center">
-                      <span>Building</span>
+                     
                       <h4 className="tp-project-5-title">
-                        <a href="portfolio-details.html">Network Security</a>
+                        <a href="#">E - Commerce Website</a>
                       </h4>
                     </div>
                   </div>
@@ -93,16 +85,12 @@ const RecentWorks = () => {
               <ReactWOW animation="fadeInUp" delay="0.7s" duration="1s">
                 <div className="tp-project-5-wrapper">
                   <div className="tp-project-5-thumb p-relative">
-                    <img src="../img/project/project-5-img3.jpg" alt="" />
-                    <div className="tp-project-5-icon">
-                      <a href="portfolio-details.html">
-                        <i className="fa-thin fa-plus"></i>
-                      </a>
-                    </div>
+                    <img src="../img/project/Portfolio-02.png" alt="" />
+                    
                     <div className="tp-project-5-content text-center">
-                      <span>Building</span>
+                    
                       <h4 className="tp-project-5-title">
-                        <a href="portfolio-details.html">
+                        <a href="#">
                           Platform Integration
                         </a>
                       </h4>
@@ -113,19 +101,12 @@ const RecentWorks = () => {
             </div>
             <div className="col-xl-3 col-lg-6 col-md-6">
               <ReactWOW animation="fadeInUp" delay="0.9s" duration="1s">
-                <div
-                  className="tp-project-5-wrapper"
-                 
-                >
+                <div className="tp-project-5-wrapper">
                   <div className="tp-project-5-thumb p-relative">
-                    <img src="../img/project/project-5-img4.jpg" alt="" />
-                    <div className="tp-project-5-icon">
-                      <a href="portfolio-details.html">
-                        <i className="fa-thin fa-plus"></i>
-                      </a>
-                    </div>
+                    <img src="../img/project/Portfolio-06.png" alt="" />
+                    
                     <div className="tp-project-5-content text-center">
-                      <span>Building</span>
+                     
                       <h4 className="tp-project-5-title">
                         <a href="portfolio-details.html">IT Management</a>
                       </h4>

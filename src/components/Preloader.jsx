@@ -11,11 +11,11 @@ setTimeout(() => setFade(false), 1000);
   return (
 
 
-        <div class={fade ? `loader-wrapper` : fade ? FadeOut() : null   } >
-          <div class="loader"></div>
-          <div class="loder-section left-section"></div>
-          <div class="loder-section right-section"></div>
-          <div class="loader-brand-icon">
+        <div className={fade ? `loader-wrapper` : fade ? FadeOut() : null   } >
+          <div className="loader"></div>
+          <div className="loder-section left-section"></div>
+          <div className="loder-section right-section"></div>
+          <div className="loader-brand-icon">
             <img src="../img/logo/MMR-logo.jpg" alt="" />
           </div>
         </div>

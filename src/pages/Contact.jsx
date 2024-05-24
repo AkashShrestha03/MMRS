@@ -1,8 +1,38 @@
 import { useState } from "react";
 import Preloader from "../components/Preloader";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 
 const Contact = () => {
+  const INITIAL_VALUE = {
+    from_name: "",
+    email: "",
+    phone: "",
+    message: "",
+    company: ""
+  };
+   const form = useRef();
+
+  
+
+   const sendEmail = (e) => {
+      e.preventDefault();
+
+     emailjs
+       .sendForm("service_lpo5bke", "template_93ur9ke", formValues, {
+         publicKey: "Fk9hDL6FepeQHfyBP",
+       })
+       .then(
+         () => {
+           console.log("SUCCESS!");
+         },
+         (error) => {
+           console.log("FAILED...", error.text);
+         }
+       );
+   };
+
   const [loader, setLoader] = useState(true);
   return (
     <>
@@ -29,9 +59,9 @@ const Contact = () => {
             <div className="row">
               <div className="col-xl-12">
                 <form
+                  ref={form}
+                  onSubmit={sendEmail}
                   id="contact-form"
-                  action="https://html.hixstudio.net/techub-prev/techub/assets/mail.php"
-                  method="POST"
                   className="tp-contact-inner-page-wrapper"
                 >
                   <div className="tp-contact-box tp-contact-inner-page-box mb-120">
@@ -42,9 +72,10 @@ const Contact = () => {
                       <div className="row">
                         <div className="col-xl-6 col-lg-6">
                           <input
-                            name="name"
+                            name="from_name"
                             type="text"
                             placeholder="Enter your name"
+                          
                           />
                         </div>
                         <div className="col-xl-6 col-lg-6">
@@ -52,20 +83,23 @@ const Contact = () => {
                             name="email"
                             type="email"
                             placeholder="Enter your email"
+                          
                           />
                         </div>
                         <div className="col-xl-6 col-lg-6">
                           <input
-                            name="text"
+                            name="company"
                             type="text"
                             placeholder="Your Company"
+                          
                           />
                         </div>
                         <div className="col-xl-6 col-lg-6">
                           <input
-                            name="subject"
-                            type="text"
+                            name="phone"
+                            type="number"
                             placeholder="Enter Your Phone Number"
+                          
                           />
                         </div>
                       </div>
@@ -73,6 +107,7 @@ const Contact = () => {
                         <textarea
                           name="message"
                           placeholder="Write Your Message"
+                         
                         ></textarea>
                       </div>
                       <div className="tp-contact-submit">
@@ -138,6 +173,6 @@ const Contact = () => {
       </main>
     </>
   );
-}
+};
 
-export default Contact
+export default Contact;

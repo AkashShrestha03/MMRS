@@ -155,7 +155,7 @@ const HomePage = () => {
               </div>
               <div className="col-lg-6 col-md-6 ">
                 <ReactWOW animation="fadeInUp" delay="0.7s" duration="1s">
-                  <div className="tp-service-5-wrapper mb-30  fadeInUp">
+                  <div className="tp-service-5-wrapper mb-30">
                     <div className="tp-service-5-item d-flex  service-containers">
                       <div className="tp-service-5-thumb">
                         <img src="../img/service/service-5-img3.png" alt="" />
@@ -287,10 +287,13 @@ const HomePage = () => {
                       <div className="tp-skill fix pb-20">
                         <label>Development</label>
                         <div className="progress progress-2">
-                          <ReactWOW animation="slideInLeft" duration="1s" delay="0.8s">
+                          <ReactWOW
+                            animation="slideInLeft"
+                            duration="1s"
+                            delay="0.8s"
+                          >
                             <div
                               className="progress-bar progress-bar-2"
-                             
                               role="progressbar"
                               aria-label="Example with label"
                               style={{ width: "90%" }}
@@ -330,7 +333,8 @@ const HomePage = () => {
                 </ReactWOW>
               </div>
               <div className="col-xl-6 col-lg-6">
-                <div className="tp-management-5-thumb wow fadeInUp">
+                <ReactWOW animation="fadeInUp"></ReactWOW>
+                <div className="tp-management-5-thumb">
                   <img src="../img/management/management-5-img.png" alt="" />
                 </div>
               </div>
@@ -368,27 +372,29 @@ const HomePage = () => {
           </div>
           <div className="container">
             <div className="row">
-              <div className="tp-chose-us-5-wrapper text-center wow fadeInUp">
-                <h2 className="tp-chose-us-5-title">
-                  Do you have any projects? <br />
-                  Contact us.
-                </h2>
-                <div className="tp-chose-us-5-btn">
-                  <Link
-                    className="tp-btn"
-                    onClick={() =>
-                      window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth",
-                      })
-                    }
-                    to={"/contact"}
-                  >
-                    <span>Contact Us</span>
-                  </Link>
+              <ReactWOW animation="fadeInUp">
+                <div className="tp-chose-us-5-wrapper text-center">
+                  <h2 className="tp-chose-us-5-title">
+                    Do you have any projects? <br />
+                    Contact us.
+                  </h2>
+                  <div className="tp-chose-us-5-btn">
+                    <Link
+                      className="tp-btn"
+                      onClick={() =>
+                        window.scroll({
+                          top: 0,
+                          left: 0,
+                          behavior: "smooth",
+                        })
+                      }
+                      to={"/contact"}
+                    >
+                      <span>Contact Us</span>
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </ReactWOW>
             </div>
           </div>
         </section>
