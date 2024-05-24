@@ -175,7 +175,7 @@ const Header = () => {
                             Home
                           </NavLink>
                         </li>
-                        <li className="has-dropdown">
+                        <li >
                           <NavLink
                             to={"about"}
                             onClick={() =>

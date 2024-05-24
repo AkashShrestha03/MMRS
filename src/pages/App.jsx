@@ -12,13 +12,10 @@ import "../assets/css/swiper-bundle.css";
 import "../index.css";
 
 
-
-
 //Scripts
 import "bootstrap/dist/js/bootstrap.bundle";
 import "../assets/js/ajax-form";
 import "../assets/js/imagesloaded-pkgd";
-
 
 import "../assets/js/magnific-popup";
 import "../assets/js/main";
@@ -31,18 +28,13 @@ import "../assets/js/vendor/jquery";
 import "../assets/js/vendor/waypoints";
 
 // Components
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { Outlet } from "react-router-dom";
-import Preloader from "../components/Preloader";
-import { useState } from "react";
 
 const App = () => {
-  const [loader, setLoader] = useState(true);
   return (
     <>
-      {setTimeout(() => setLoader(false), 1000)}
-      {loader && <Preloader></Preloader>}
       <Header />
       <Outlet />
       <Footer />

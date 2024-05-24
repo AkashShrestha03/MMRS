@@ -6,7 +6,7 @@ const Contact = () => {
   const [loader, setLoader] = useState(true);
   return (
     <>
-      {setTimeout(() => setLoader(false), 1000)}
+      {setTimeout(() => setLoader(false), 500)}
       {loader && <Preloader></Preloader>}
       <main className="">
         <section
