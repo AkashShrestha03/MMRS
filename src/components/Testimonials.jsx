@@ -74,17 +74,17 @@ const Testimonials = () => {
                           </div>
                           <div className="tp-client-inner d-flex">
                             <div className="tp-client-image">
-                              <img
+                              {/* <img
                                 src="../img/testimonial/testi-5-11.png"
                                 alt="client"
-                              />
+                              /> */}
                             </div>
                             <div className="tp-client-nav-info">
                               <h5 className="tp-client-nav-title">
-                                Bulbul Ahmad
+                                Rahul Mishra
                               </h5>
                               <span className="tp-client-nav-designation">
-                                Developer
+                                CEO - ComfortPlay
                               </span>
                             </div>
                           </div>
@@ -118,15 +118,17 @@ const Testimonials = () => {
                           </div>
                           <div className="tp-client-inner d-flex">
                             <div className="tp-client-image">
-                              <img
+                              {/* <img
                                 src="../img/testimonial/testi-5-22.png"
                                 alt="client"
-                              />
+                              /> */}
                             </div>
                             <div className="tp-client-nav-info">
-                              <h5 className="tp-client-nav-title">Rasalina</h5>
+                              <h5 className="tp-client-nav-title">
+                                Shivan Thukral
+                              </h5>
                               <span className="tp-client-nav-designation">
-                                CLIENT OF COMPANY
+                                Director - Mouj Maalik
                               </span>
                             </div>
                           </div>
@@ -161,17 +163,17 @@ const Testimonials = () => {
                           </div>
                           <div className="tp-client-inner d-flex">
                             <div className="tp-client-image">
-                              <img
+                              {/* <img
                                 src="../img/testimonial/testi-5-33.png"
                                 alt="client"
-                              />
+                              /> */}
                             </div>
                             <div className="tp-client-nav-info">
                               <h5 className="tp-client-nav-title">
-                                Manas Singh
+                                Mansi Vats
                               </h5>
                               <span className="tp-client-nav-designation">
-                                Designer
+                                Director - Chemical Industries
                               </span>
                             </div>
                           </div>
@@ -206,15 +208,17 @@ const Testimonials = () => {
                           </div>
                           <div className="tp-client-inner d-flex">
                             <div className="tp-client-image">
-                              <img
+                              {/* <img
                                 src="../img/testimonial/testi-5-22.png"
                                 alt="client"
-                              />
+                              /> */}
                             </div>
                             <div className="tp-client-nav-info">
-                              <h5 className="tp-client-nav-title">Ravi Shankar Gupta</h5>
+                              <h5 className="tp-client-nav-title">
+                                Faraz Khan
+                              </h5>
                               <span className="tp-client-nav-designation">
-                                CLIENT OF COMPANY
+                                Director - MotherCopperWare
                               </span>
                             </div>
                           </div>
@@ -248,15 +252,17 @@ const Testimonials = () => {
                           </div>
                           <div className="tp-client-inner d-flex">
                             <div className="tp-client-image">
-                              <img
+                              {/* <img
                                 src="../img/testimonial/testi-5-22.png"
                                 alt="client"
-                              />
+                              /> */}
                             </div>
                             <div className="tp-client-nav-info">
-                              <h5 className="tp-client-nav-title">Priyanka Trivedi</h5>
+                              <h5 className="tp-client-nav-title">
+                                Vishwajeet
+                              </h5>
                               <span className="tp-client-nav-designation">
-                                CLIENT OF COMPANY
+                                Director - Vishwajeet Express
                               </span>
                             </div>
                           </div>
@@ -265,6 +271,50 @@ const Testimonials = () => {
                               src="assets/img/testimonial/testi-box-shape.png"
                               alt=""
                             />
+                          </div>
+                        </div>
+                      </div>
+                      {/* Review 6 */}
+                      <div
+                        className="tab-pane fade"
+                        id="v-pills-man6"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-man6-tab"
+                      >
+                        <div className="tp-client-review p-relative">
+                          <div className="tp-client-caption">
+                            <img
+                              src="../img/testimonial/testi-star.png"
+                              alt=""
+                            />
+                            <p>
+                              I am so grateful for this company's excellent
+                              services. They took my concept and created
+                              something genuinely amazing with it. They are
+                              unmatched in their design and development ability.
+                            </p>
+                          </div>
+                          <div className="tp-client-inner d-flex">
+                            <div className="tp-client-image">
+                              {/* <img
+                                src="../img/testimonial/testi-5-22.png"
+                                alt="client"
+                              /> */}
+                            </div>
+                            <div className="tp-client-nav-info">
+                              <h5 className="tp-client-nav-title">
+                                Rishabh
+                              </h5>
+                              <span className="tp-client-nav-designation">
+                                Director - Robust Promotions
+                              </span>
+                            </div>
+                          </div>
+                          <div className="tp-testimonial-box-shape">
+                            {/* <img
+                              src="assets/img/testimonial/testi-box-shape.png"
+                              alt=""
+                            /> */}
                           </div>
                         </div>
                       </div>
@@ -288,7 +338,7 @@ const Testimonials = () => {
                     >
                       <span className="tp-testimonial-tab-btn">
                         <img
-                          src="../img/testimonial/testi-5-1.png"
+                          src="../img/testimonial/Rahul.jpg"
                           alt="client"
                         />
                       </span>
@@ -306,7 +356,7 @@ const Testimonials = () => {
                     >
                       <span className="tp-testimonial-tab-btn">
                         <img
-                          src="../img/testimonial/testi-5-2.png"
+                          src="../img/testimonial/Shivan.jpg"
                           alt="client"
                         />
                       </span>
@@ -323,7 +373,7 @@ const Testimonials = () => {
                     >
                       <span className="tp-testimonial-tab-btn ">
                         <img
-                          src="../img/testimonial/testi-5-3.png"
+                          src="../img/testimonial/Mansi.jpg"
                           alt="client"
                         />
                       </span>
@@ -340,7 +390,7 @@ const Testimonials = () => {
                     >
                       <span className="tp-testimonial-tab-btn ">
                         <img
-                          src="../img/testimonial/testi-5-1.png"
+                          src="../img/testimonial/Mother.jpg"
                           alt="client"
                         />
                       </span>
@@ -353,6 +403,23 @@ const Testimonials = () => {
                       type="button"
                       role="tab"
                       aria-controls="v-pills-man5"
+                      aria-selected="true"
+                    >
+                      <span className="tp-testimonial-tab-btn">
+                        <img
+                          src="../img/testimonial/testi-5-1.png"
+                          alt="client"
+                        />
+                      </span>
+                    </button>
+                    <button
+                      className="tp-testimonial-btn tp-testimonial-item-3 d-flex nav-link"
+                      id="v-pills-man6-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-man6"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-man6"
                       aria-selected="true"
                     >
                       <span className="tp-testimonial-tab-btn">

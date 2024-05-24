@@ -44,14 +44,14 @@ const About = () => {
               <div className="col col-lg-3">
                 <div className="tp-brand-5-wrapper">
                   <div className="tp-brand-5-thumb">
-                    <img src="../img/brand/brand-5-1.jpg" alt="" />
+                    <img src="../img/brand/Plane.png" alt="" />
                   </div>
                 </div>
               </div>
               <div className="col col-lg-3">
                 <div className="tp-brand-5-wrapper">
                   <div className="tp-brand-5-thumb">
-                    <img src="../img/brand/brand-5-2.jpg" alt="" />
+                    <img src="../img/brand/FG.png" alt="" />
                   </div>
                 </div>
               </div>

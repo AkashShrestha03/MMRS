@@ -10,10 +10,7 @@ const Services = () => {
       {setTimeout(() => setLoader(false), 500)}
       {loader && <Preloader></Preloader>}
       <main>
-        <section
-          className="tp-portfolio-breadcrumb-area tp-service-inner-breadcrumb-area mb-110"
-          
-        >
+        <section className="tp-portfolio-breadcrumb-area tp-service-inner-breadcrumb-area mb-110">
           <div className="container">
             <div className="row">
               <div className="tp-portfolio-breadcrumb-content">
@@ -45,8 +42,9 @@ const Services = () => {
                       {/* <img src="../img/service/service-2-img1.jpg" alt=""/> */}
                       <div className="tp-service-2-box  text-center ">
                         {/* Remove arrow */}
-                       
-                        <div className="tp-service-2-icon p-relative border">
+
+                        <div className="tp-service-2-icon  p-relative ">
+                          <div className="tp-service-list  "> Hello</div>
                           <div className="tp-service-2-inner-item">
                             <span>
                               <i className="flaticon-it-service"></i>

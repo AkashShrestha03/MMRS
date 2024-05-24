@@ -72,6 +72,14 @@
   width: 140px;
 }
 
+.tp-testimonial-tab-btn img{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
 @media (max-width: 567px) {
   .tp-testimonial-list {
     height: 140px;
@@ -98,9 +106,27 @@
 
 .tp-service-2-icon{
 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
 }
 .tp-service-2-icon:hover{
   transform: scale(1.06);
+}
+
+
+.tp-service-list:hover{
+  display: block;
+
+}
+
+.tp-service-list{
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: antiquewhite;
+  z-index: 99;
 }
 
 /* Footer */
@@ -108,3 +134,13 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 @media (max-width: 767px) {
  
 }
+
+
+/* About */
+
+.tp-brand-5-thumb img{
+  aspect-ratio: 4 /2;
+  width: 70%;
+
+}
+

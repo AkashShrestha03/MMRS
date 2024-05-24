@@ -179,7 +179,7 @@ const HomePage = () => {
               <div className="col-lg-6 col-md-6 ">
                 <ReactWOW animation="fadeInUp" delay="0.9s" duration="1ss">
                   <div
-                    className="tp-service-5-wrapper mb-30 wow   fadeInUp "
+                    className="tp-service-5-wrapper mb-30 "
                     data-wow-delay=".9s"
                     data-wow-duration="1s"
                   >
