@@ -147,6 +147,12 @@
 
 }
 
+@media screen and (max-width: 457px) {
+  .tp-service-2{
+    width: 90%;
+  }
+}
+
 
 /* Footer */
 

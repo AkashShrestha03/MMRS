@@ -1,38 +1,8 @@
 import { useState } from "react";
 import Preloader from "../components/Preloader";
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-
+import React from "react";
 
 const Contact = () => {
-  const INITIAL_VALUE = {
-    from_name: "",
-    email: "",
-    phone: "",
-    message: "",
-    company: ""
-  };
-   const form = useRef();
-
-  
-
-   const sendEmail = (e) => {
-      e.preventDefault();
-
-     emailjs
-       .sendForm("service_lpo5bke", "template_93ur9ke", formValues, {
-         publicKey: "Fk9hDL6FepeQHfyBP",
-       })
-       .then(
-         () => {
-           console.log("SUCCESS!");
-         },
-         (error) => {
-           console.log("FAILED...", error.text);
-         }
-       );
-   };
-
   const [loader, setLoader] = useState(true);
   return (
     <>
@@ -59,8 +29,8 @@ const Contact = () => {
             <div className="row">
               <div className="col-xl-12">
                 <form
-                  ref={form}
-                  onSubmit={sendEmail}
+                  action="https://formspree.io/f/xrgnvyjl"
+                  method="POST"
                   id="contact-form"
                   className="tp-contact-inner-page-wrapper"
                 >
@@ -75,7 +45,6 @@ const Contact = () => {
                             name="from_name"
                             type="text"
                             placeholder="Enter your name"
-                          
                           />
                         </div>
                         <div className="col-xl-6 col-lg-6">
@@ -83,7 +52,6 @@ const Contact = () => {
                             name="email"
                             type="email"
                             placeholder="Enter your email"
-                          
                           />
                         </div>
                         <div className="col-xl-6 col-lg-6">
@@ -91,7 +59,6 @@ const Contact = () => {
                             name="company"
                             type="text"
                             placeholder="Your Company"
-                          
                           />
                         </div>
                         <div className="col-xl-6 col-lg-6">
@@ -99,7 +66,6 @@ const Contact = () => {
                             name="phone"
                             type="number"
                             placeholder="Enter Your Phone Number"
-                          
                           />
                         </div>
                       </div>
@@ -107,7 +73,6 @@ const Contact = () => {
                         <textarea
                           name="message"
                           placeholder="Write Your Message"
-                         
                         ></textarea>
                       </div>
                       <div className="tp-contact-submit">
