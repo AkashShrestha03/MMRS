@@ -23,10 +23,18 @@ const Footer = () => {
                     <p>sales@mmrsolutions.co.in</p>
                   </div>
                   <div className="tp-footer-social">
-                    <Link to={"/"}>
+                    <Link
+                      to={
+                        "https://www.facebook.com/profile.php?id=100092450942528&mibextid=ZbWKwL"
+                      }
+                    >
                       <i className="flaticon-facebook-circular-logo"></i>
                     </Link>
-                    <Link to={"/"}>
+                    <Link
+                      to={
+                        "https://www.instagram.com/devloop_pvt_ltd?igsh=MW4zOHY2bHU2cnR4Nw=="
+                      }
+                    >
                       <i className="flaticon-instagram"></i>
                     </Link>
 
@@ -147,9 +155,7 @@ const Footer = () => {
                       Get Special Offers. We Never Spam.
                     </p>
                     <div className="tp-footer-widget-content-input">
-                      <form
-                        className="tp-footer-form"
-                      >
+                      <form className="tp-footer-form">
                         <input
                           type="email"
                           className="w-100"

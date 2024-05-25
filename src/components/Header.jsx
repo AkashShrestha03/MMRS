@@ -13,16 +13,15 @@ const Header = () => {
           <div className="tpoffcanvas-area   ">
             <ReactWOW animation="fadeInRight" duration="0.6s">
               <div className="tpoffcanvas ">
-               
-                  <div className="tpoffcanvas__close-btn">
-                    <button
-                      className="close-btn"
-                      onClick={() => setOpenNav(false)}
-                    >
-                      <i className="fal fa-times"></i>
-                    </button>
-                  </div>
-               
+                <div className="tpoffcanvas__close-btn">
+                  <button
+                    className="close-btn"
+                    onClick={() => setOpenNav(false)}
+                  >
+                    <i className="fal fa-times"></i>
+                  </button>
+                </div>
+
                 <Link to={"/"} onClick={() => setOpenNav(false)}>
                   <div className="logo"></div>
                 </Link>
@@ -124,10 +123,10 @@ const Header = () => {
 
                 <div className="tpoffcanvas__social">
                   <div className="social-icon">
-                    <a href="#">
+                    <a href="https://www.facebook.com/profile.php?id=100092450942528&mibextid=ZbWKwL">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/devloop_pvt_ltd?igsh=MW4zOHY2bHU2cnR4Nw==">
                       <i className="fab fa-instagram"></i>
                     </a>
                     <a href="#">
