@@ -78,6 +78,10 @@
   width: 380px;
 }
 
+.tp-project-3-thumb{
+  padding-left: 20px;
+}
+
 .tp-project-5-wrapper:hover .tp-project-5-thumb::before {
   visibility: visible;
   opacity: 1;
