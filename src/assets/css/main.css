@@ -13993,9 +13993,7 @@ label {
   visibility: hidden;
   opacity: 0;
   transition: all 0.6s ease 0s;
- 
-
-  bottom: 38%;
+  bottom: 33%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-project-3-down-content {
@@ -14258,7 +14256,7 @@ label {
   bottom: -70px;
   left: 0;
   transition: 0.6s;
-  right: 0;
+  right:0;
 }
 .tp-project-5-content span {
   font-size: 16px;

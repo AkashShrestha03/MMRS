@@ -46,11 +46,10 @@ const RecentWorks = () => {
         <div className="container-fluid tp-project-5-width">
           <div className="row">
             <div className="col-xl-3 col-lg-6 col-md-6">
-              <ReactWOW animation="fadeInUp">
+              <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                 <div
-                  className="tp-project-5-wrapper wow fadeInUp"
-                  data-wow-delay=".3s"
-                  data-wow-duration="1s"
+                  className="tp-project-5-wrapper"
+                 
                 >
                   <div className="tp-project-5-thumb p-relative">
                     <img src="../img/portfolio/Portfolio-2.png" alt="" />
@@ -58,7 +57,7 @@ const RecentWorks = () => {
                     <div className="tp-project-5-content text-center">
                      
                       <h4 className="tp-project-5-title">
-                        <a href="#">E - Learning App</a>
+                        <a >E - Learning App</a>
                       </h4>
                     </div>
                   </div>
@@ -74,7 +73,7 @@ const RecentWorks = () => {
                     <div className="tp-project-5-content text-center">
                      
                       <h4 className="tp-project-5-title">
-                        <a href="#">E - Commerce Website</a>
+                        <a >E - Commerce Website</a>
                       </h4>
                     </div>
                   </div>
@@ -90,8 +89,8 @@ const RecentWorks = () => {
                     <div className="tp-project-5-content text-center">
                     
                       <h4 className="tp-project-5-title">
-                        <a href="#">
-                          Platform Integration
+                        <a >
+                          Mobile Game UI/UX
                         </a>
                       </h4>
                     </div>
@@ -108,7 +107,7 @@ const RecentWorks = () => {
                     <div className="tp-project-5-content text-center">
                      
                       <h4 className="tp-project-5-title">
-                        <a href="portfolio-details.html">IT Management</a>
+                        <a>CRM Platform</a>
                       </h4>
                     </div>
                   </div>

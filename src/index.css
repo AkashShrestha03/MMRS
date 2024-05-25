@@ -59,17 +59,32 @@
 
 .tp-project-5-thumb img{
   height: 250px;
-  width: 352px;
+  width: 356px;
   
   aspect-ratio: 3 / 2;
 }
+.tp-project-5-thumb{
+  height: 250px;
+  width: 356px;
+}
+.tp-project-3-slide-wrapper{
+  margin-right: 10px;
+}
 
 @media screen and (max-width: 457px) {
-  .portfolio-card{
-  margin-right: 200px !important;
-    /* display: flex;
-    justify-content: center; */
-  }
+  .tp-project-5-thumb{
+    padding-left: 20px;
+  height: 260px;
+  width: 380px;
+}
+
+.tp-project-5-wrapper:hover .tp-project-5-thumb::before {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+  left: 5%;
+  height: 97%;
+}
 }
 
 /* Testimonials */
