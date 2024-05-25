@@ -64,7 +64,7 @@
   aspect-ratio: 3 / 2;
 }
 .tp-project-5-thumb{
-  
+
   height: 250px;
   width: 310px;
  
@@ -164,8 +164,15 @@
 /* About */
 
 .tp-brand-5-thumb img{
-  aspect-ratio: 4 /2;
+  aspect-ratio: 3 /2;
   width: 70%;
+}
 
+@media screen and (max-width: 457px) {
+  .tp-brand-5-top-width{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
