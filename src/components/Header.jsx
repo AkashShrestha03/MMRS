@@ -148,129 +148,130 @@ const Header = () => {
           </div>
         </>
       )}
-
-      <header className="tp-header-height">
-        <div id="header-sticky" className="tp-header-bottom">
-          <div className="tp-header-area">
-            <div className="container-fluid">
-              <div className="row align-items-center">
-                <div className="col-xl-2 col-lg-4 col-md-4 col-6">
-                  <Link to={"/"}>
-                    <div className="logo"></div>
-                  </Link>
-                </div>
-                <div className="col-xl-6 d-none d-xl-block">
-                  <div className="main-menu  main-menu-5">
-                    <nav className="tp-main-menu-content ">
-                      <ul>
-                        <li>
-                          <NavLink
-                            to={"/"}
-                            className="color-active"
-                            onClick={() =>
-                              window.scroll({
-                                top: 0,
-                                left: 0,
-                                behavior: "smooth",
-                              })
-                            }
-                          >
-                            Home
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink
-                            to={"about"}
-                            onClick={() =>
-                              window.scroll({
-                                top: 0,
-                                left: 0,
-                                behavior: "smooth",
-                              })
-                            }
-                          >
-                            About Us
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink
-                            to={"/portfolio"}
-                            onClick={() =>
-                              window.scroll({
-                                top: 0,
-                                left: 0,
-                                behavior: "smooth",
-                              })
-                            }
-                          >
-                            Portfolio
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink
-                            to={"/services"}
-                            onClick={() =>
-                              window.scroll({
-                                top: 0,
-                                left: 0,
-                                behavior: "smooth",
-                              })
-                            }
-                          >
-                            Services
-                          </NavLink>
-                        </li>
-
-                        <li>
-                          <NavLink
-                            to={"/contact"}
-                            onClick={() =>
-                              window.scroll({
-                                top: 0,
-                                left: 0,
-                                behavior: "smooth",
-                              })
-                            }
-                          >
-                            Contact Us
-                          </NavLink>
-                        </li>
-                      </ul>
-                    </nav>
+      <ReactWOW animation="fadeInDown">
+        <header className="tp-header-height">
+          <div id="header-sticky" className="tp-header-bottom">
+            <div className="tp-header-area">
+              <div className="container-fluid">
+                <div className="row align-items-center">
+                  <div className="col-xl-2 col-lg-4 col-md-4 col-6">
+                    <Link to={"/"}>
+                      <div className="logo"></div>
+                    </Link>
                   </div>
-                </div>
-                <div className="col-xl-4 col-lg-8 col-md-8 col-6">
-                  <div className="tp-header-right d-flex justify-content-end align-items-center">
-                    <div className="tp-header-button d-none d-lg-block">
-                      <Link
-                        to={"/contact"}
-                        onClick={() =>
-                          window.scroll({
-                            top: 0,
-                            left: 0,
-                            behavior: "smooth",
-                          })
-                        }
-                        className="tp-header-btn"
-                      >
-                        <span>Get a Quote</span>
-                      </Link>
+                  <div className="col-xl-6 d-none d-xl-block">
+                    <div className="main-menu  main-menu-5">
+                      <nav className="tp-main-menu-content ">
+                        <ul>
+                          <li>
+                            <NavLink
+                              to={"/"}
+                              className="color-active"
+                              onClick={() =>
+                                window.scroll({
+                                  top: 0,
+                                  left: 0,
+                                  behavior: "smooth",
+                                })
+                              }
+                            >
+                              Home
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink
+                              to={"about"}
+                              onClick={() =>
+                                window.scroll({
+                                  top: 0,
+                                  left: 0,
+                                  behavior: "smooth",
+                                })
+                              }
+                            >
+                              About Us
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink
+                              to={"/portfolio"}
+                              onClick={() =>
+                                window.scroll({
+                                  top: 0,
+                                  left: 0,
+                                  behavior: "smooth",
+                                })
+                              }
+                            >
+                              Portfolio
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink
+                              to={"/services"}
+                              onClick={() =>
+                                window.scroll({
+                                  top: 0,
+                                  left: 0,
+                                  behavior: "smooth",
+                                })
+                              }
+                            >
+                              Services
+                            </NavLink>
+                          </li>
+
+                          <li>
+                            <NavLink
+                              to={"/contact"}
+                              onClick={() =>
+                                window.scroll({
+                                  top: 0,
+                                  left: 0,
+                                  behavior: "smooth",
+                                })
+                              }
+                            >
+                              Contact Us
+                            </NavLink>
+                          </li>
+                        </ul>
+                      </nav>
                     </div>
-                    <div className="tp-header-menu-ber">
-                      <button
-                        className="d-xl-none tp-header-5-bar tp-menu-bar"
-                        onClick={() => setOpenNav(true)}
-                      >
-                        <i className="fa-solid fa-bars"></i>
-                      </button>
+                  </div>
+                  <div className="col-xl-4 col-lg-8 col-md-8 col-6">
+                    <div className="tp-header-right d-flex justify-content-end align-items-center">
+                      <div className="tp-header-button d-none d-lg-block">
+                        <Link
+                          to={"/contact"}
+                          onClick={() =>
+                            window.scroll({
+                              top: 0,
+                              left: 0,
+                              behavior: "smooth",
+                            })
+                          }
+                          className="tp-header-btn"
+                        >
+                          <span>Get a Quote</span>
+                        </Link>
+                      </div>
+                      <div className="tp-header-menu-ber">
+                        <button
+                          className="d-xl-none tp-header-5-bar tp-menu-bar"
+                          onClick={() => setOpenNav(true)}
+                        >
+                          <i className="fa-solid fa-bars"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </ReactWOW>
     </>
   );
 };
