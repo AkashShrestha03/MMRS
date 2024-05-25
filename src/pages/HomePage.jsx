@@ -177,11 +177,10 @@ const HomePage = () => {
                 </ReactWOW>
               </div>
               <div className="col-lg-6 col-md-6 ">
-                <ReactWOW animation="fadeInUp" delay="0.9s" duration="1ss">
+                <ReactWOW animation="fadeInUp" delay="0.9s" duration="1s">
                   <div
                     className="tp-service-5-wrapper mb-30 "
-                    data-wow-delay=".9s"
-                    data-wow-duration="1s"
+                  
                   >
                     <div className="tp-service-5-item d-flex service-containers">
                       <div className="tp-service-5-thumb">
