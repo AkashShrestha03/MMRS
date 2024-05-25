@@ -189,7 +189,7 @@ const About = () => {
                 <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                   <div className="tp-value-wrapper d-flex flex-column align-items-center mb-30  ">
                     <div className="tp-value-icon pb-20">
-                      <img src="../img/value/value-icon1.png" alt="" />
+                      <img src="../img/icon/We.png" height={100} alt="" />
                     </div>
                     <div className=" text-center">
                       <h4 className="tp-value-title">Who We Are</h4>
@@ -206,7 +206,7 @@ const About = () => {
                 <ReactWOW animation="fadeInUp" delay="0.5s" duration="1s">
                   <div className="tp-value-wrapper d-flex flex-column align-items-center d-flex mb-30 ">
                     <div className="tp-value-icon pb-20 ">
-                      <img src="../img/value/value-icon2.png" alt="" />
+                      <img src="../img/icon/vision.png" height={100} alt="" />
                     </div>
                     <div className="tp-value-content">
                       <h4 className="tp-value-title text-center">Our Vision</h4>
@@ -221,8 +221,8 @@ const About = () => {
               <div className="col-xl-4 col-lg-6">
                 <ReactWOW animation="fadeInUp" delay="0.7s" duration="1s">
                   <div className="tp-value-wrapper d-flex flex-column align-items-center mb-30  ">
-                    <div className="tp-value-icon pb-20 ">
-                      <img src="../img/value/value-icon3.png" alt="" />
+                    <div className="tp-value-icon pb-20 ps-5 ms-5 ">
+                      <img src="../img/icon/Goal.png" height={100} alt="" />
                     </div>
                     <div className="tp-value-content">
                       <h4 className="tp-value-title text-center">
@@ -296,10 +296,7 @@ const About = () => {
               </div>
               <div className="col-xl-4 col-lg-6">
                 <ReactWOW animation="fadeInUp" delay="0.7s" duration="1s">
-                  <div
-                    className="tp-value-wrapper d-flex flex-column align-items-center mb-30  "
-                    
-                  >
+                  <div className="tp-value-wrapper d-flex flex-column align-items-center mb-30  ">
                     <div className="tp-value-icon pb-20 ">
                       <img src="../img/value/value-icon3.png" alt="" />
                     </div>

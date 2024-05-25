@@ -18803,7 +18803,7 @@ label {
   border-radius: 15px;
 }
 .tp-value-wrapper:hover .tp-value-icon img {
-  filter: brightness(0) invert(0);
+  transform: scale3d(1.1, 1.1, 1.1);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-value-wrapper {
