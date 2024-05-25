@@ -48,12 +48,13 @@
 
 .tp-project-3-thumb img{
   height: 250px;
-  width: 352px;
+  width: 353px;
   aspect-ratio: 3 / 2;
 }
 .tp-project-3-thumb{
   height: 300px;
   width: 300px;  
+  aspect-ratio: 3 /2;
 }
 
 .tp-project-5-thumb img{
@@ -61,6 +62,14 @@
   width: 352px;
   
   aspect-ratio: 3 / 2;
+}
+
+@media screen and (max-width: 457px) {
+  .portfolio-card{
+  margin-right: 200px !important;
+    /* display: flex;
+    justify-content: center; */
+  }
 }
 
 /* Testimonials */
