@@ -148,7 +148,7 @@ const Header = () => {
           </div>
         </>
       )}
-      <ReactWOW animation="fadeInDown">
+      
         <header className="tp-header-height">
           <div id="header-sticky" className="tp-header-bottom">
             <div className="tp-header-area">
@@ -271,7 +271,7 @@ const Header = () => {
             </div>
           </div>
         </header>
-      </ReactWOW>
+   
     </>
   );
 };

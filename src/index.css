@@ -133,6 +133,7 @@
 .loader-brand-icon img{
   height: 99px;
   width: 99px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
