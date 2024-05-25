@@ -1,3 +1,10 @@
+*{
+  scroll-behavior: smooth;
+}
+
+
+
+
 .logo{
   background-image: url("../public/img/logo/MMR-logo.jpg") !important;
   background-size: cover;
@@ -25,6 +32,138 @@
  
 }
 
+/* Portfolio */
+
 .tp-portfolio-inner-subscribe-area{
   background-image: url("../public/img/portfolio/port-subs-inner-bg.jpg");
 }
+
+.tp-portfolio-breadcrumb-area{
+  background-image: url("../public/img/service/service-breadcrumb-bg.jpg");
+}
+
+.service-containers{
+  height: 350px;
+}
+
+.tp-project-3-thumb img{
+  height: 250px;
+  width: 353px;
+  aspect-ratio: 3 / 2;
+}
+.tp-project-3-thumb{
+  height: 300px;
+  width: 300px;  
+  aspect-ratio: 3 /2;
+}
+
+.tp-project-5-thumb img{
+  height: 250px;
+  width: 356px;
+  
+  aspect-ratio: 3 / 2;
+}
+.tp-project-5-thumb{
+  height: 250px;
+  width: 356px;
+}
+.tp-project-3-slide-wrapper{
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 457px) {
+  .tp-project-5-thumb{
+    padding-left: 20px;
+  height: 260px;
+  width: 380px;
+}
+
+.tp-project-3-thumb{
+  padding-left: 20px;
+}
+
+.tp-project-5-wrapper:hover .tp-project-5-thumb::before {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+  left: 5%;
+  height: 97%;
+}
+}
+
+/* Testimonials */
+
+    .no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.tp-testimonial-list{
+  height: 352px;
+  width: 140px;
+}
+
+.tp-testimonial-tab-btn img{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+@media (max-width: 567px) {
+  .tp-testimonial-list {
+    height: 140px;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
+
+/* Loader */
+
+.loader-brand-icon img{
+  height: 99px;
+  width: 99px;
+  border-radius: 50%;
+}
+
+/* Services */
+
+.tp-service-2:hover{
+  transition: 0.8s;
+  transform: scale(1.06);
+}
+
+
+.tp-service-list:hover{
+  display: block;
+
+}
+
+@media screen and (max-width: 457px) {
+  .tp-service-2{
+    width: 90%;
+  }
+}
+
+
+/* Footer */
+
+
+
+
+/* About */
+
+.tp-brand-5-thumb img{
+  aspect-ratio: 4 /2;
+  width: 70%;
+
+}
+

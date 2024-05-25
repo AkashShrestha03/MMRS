@@ -11,11 +11,12 @@ import "../assets/css/spacing.css";
 import "../assets/css/swiper-bundle.css";
 import "../index.css";
 
+
 //Scripts
 import "bootstrap/dist/js/bootstrap.bundle";
 import "../assets/js/ajax-form";
 import "../assets/js/imagesloaded-pkgd";
-import "../assets/js/isotope-pkgd";
+
 import "../assets/js/magnific-popup";
 import "../assets/js/main";
 import "../assets/js/nice-select";
@@ -27,8 +28,8 @@ import "../assets/js/vendor/jquery";
 import "../assets/js/vendor/waypoints";
 
 // Components
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { Outlet } from "react-router-dom";
 
 const App = () => {

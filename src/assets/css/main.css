@@ -589,10 +589,10 @@ div.demo img {
   transition: all 0.3s 0s ease-out;
 }
 .body-overlay:hover {
-  cursor: url("../img/icon/cross-out.html"), pointer;
+  cursor: url("../../../public/img//icon/cross-out.html"), pointer;
 }
 
-.body-overlay.opened {
+.body-overlay .opened {
   opacity: 0.7;
   visibility: visible;
 }
@@ -2600,8 +2600,6 @@ div.demo img {
   z-index: 999999;
   padding: 50px;
   scrollbar-width: none;
-  opacity: 0;
-  visibility: hidden;
   transition: 0.45s ease-in-out;
   overflow-y: scroll;
 }
@@ -2626,7 +2624,7 @@ div.demo img {
 .tpoffcanvas .tp-main-menu-mobile {
   margin-bottom: 50px;
 }
-.tpoffcanvas.opened {
+.tpoffcanvas .opened {
   opacity: 1;
   visibility: visible;
 }
@@ -2642,7 +2640,7 @@ div.demo img {
     padding: 40px;
   }
 }
-.tpoffcanvas.opened {
+.tpoffcanvas  {
   right: 0;
   -webkit-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -moz-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -5596,15 +5594,16 @@ body .ui-tooltip {
   color: var(--tp-common-white);
 }
 
-.header-sticky {
-  position: fixed;
+
+#header-sticky {
+  position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
   opacity: 1;
   visibility: visible;
   width: 100%;
-  z-index: 999;
+  z-index: 10;
   background-color: var(--tp-common-white);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   animation: 0.95s ease 0s normal forwards 1 running fadeInDown;
@@ -8464,7 +8463,6 @@ body .ui-tooltip {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   padding-right: 3px;
 }
 
@@ -8643,20 +8641,18 @@ body .ui-tooltip {
 }
 .tp-service-2-icon::before {
   position: absolute;
-  content: "";
+ 
   height: 20px;
-  width: 2px;
+  
   background: var(--tp-text-skill);
-  top: 6px;
-  left: 6px;
+ 
 }
 .tp-service-2-icon::after {
-  content: "";
+ 
   position: absolute;
   width: 20px;
-  height: 2px;
-  left: 6px;
-  top: 6px;
+  
+  
   background: var(--tp-text-skill);
 }
 .tp-service-2-inner-item {
@@ -13960,10 +13956,12 @@ label {
 .tp-project-3-thumb::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 117%;
+  height: 83.5%;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(18, 6, 44, 0.7);
   opacity: 0;
   visibility: hidden;
@@ -13988,16 +13986,14 @@ label {
 }
 .tp-project-3-down-content {
   position: absolute;
-  left: 0;
+  left: 15%;
   background: var(--tp-common-white);
   padding: 16px 45px;
   transform: perspective(500px) rotateX(90deg);
   visibility: hidden;
   opacity: 0;
   transition: all 0.6s ease 0s;
-  right: 0;
-  margin: 0 36px 40px;
-  bottom: 0;
+  bottom: 33%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-project-3-down-content {
@@ -14260,7 +14256,7 @@ label {
   bottom: -70px;
   left: 0;
   transition: 0.6s;
-  right: 0;
+  right:0;
 }
 .tp-project-5-content span {
   font-size: 16px;
@@ -18807,7 +18803,7 @@ label {
   border-radius: 15px;
 }
 .tp-value-wrapper:hover .tp-value-icon img {
-  filter: brightness(0) invert(0);
+  transform: scale3d(1.1, 1.1, 1.1);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-value-wrapper {
