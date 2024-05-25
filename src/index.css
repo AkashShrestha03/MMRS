@@ -8,8 +8,8 @@
 .logo{
   background-image: url("../public/img/logo/MMR-logo.png") !important;
   background-size: cover;
-  height: 70px;
-  width: 70px;
+  height:110px;
+  width: 110px;
   background-position: center;
   border-radius: 50%;
 }
