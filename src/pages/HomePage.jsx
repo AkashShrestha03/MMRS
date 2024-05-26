@@ -4,7 +4,6 @@ import RecentWorks from "../components/RecentWorks";
 import Testimonials from "../components/Testimonials";
 //Animation
 import ReactWOW from "react-wow";
-import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import Preloader from "../components/Preloader";
 
@@ -24,19 +23,12 @@ const HomePage = () => {
             <div className="container">
               <div className="row align-items-end">
                 <div className="col-xl-6 col-lg-6">
-                  <ReactWOW animation="fadeInUp">
                     <div className="tp-slider-5-content p-relative z-index-11">
+                  <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                       <div
-                        animate={{ y: -20 }}
-                        transition={{
-                          type: "spring",
-                          ease: "linear",
-                          duration: 1,
-                          x: { duration: 3 },
-                        }}
-                        className="tp-slider-5-title-box mb-50 wow fadeInUp"
-                        data-wow-delay=".3s"
-                        data-wow-duration="1s"
+                       
+                        className="tp-slider-5-title-box mb-50"
+                    
                       >
                         <span className="tp-slider-sub-title tp-slider-sub-title-5">
                           Where affordability meets quality
@@ -66,8 +58,8 @@ const HomePage = () => {
                           <span>Get Started</span>
                         </a>
                       </div>
-                    </div>
                   </ReactWOW>
+                    </div>
                 </div>
                 <div className="col-xl-6 col-lg-6">
                   <div className="tp-slider-5-thumb p-relative z-index-1">

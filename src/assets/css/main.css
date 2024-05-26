@@ -9049,7 +9049,13 @@ body .ui-tooltip {
 }
 @media (max-width: 767px) {
   .tp-service-5-item {
-    display: inherit !important;
+    display: flex !important;
+    gap: 25px;
+  }
+}
+@media (max-width: 467px) {
+.tp-service-5-item {
+    padding: 60px 20px 56px 20px;
   }
 }
 .tp-service-5-item::after {
