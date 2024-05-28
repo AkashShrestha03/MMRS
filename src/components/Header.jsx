@@ -154,7 +154,7 @@ const Header = () => {
             <div className="tp-header-area">
               <div className="container-fluid">
                 <div className="row align-items-center">
-                  <div className="col-xl-2 col-lg-4 col-md-4 col-6">
+                  <div className="col-xl-2 col-lg-4 col-md-4 col-6" style={{border: "none"}}>
                     <Link to={"/"}>
                       <div className="logo"></div>
                     </Link>
