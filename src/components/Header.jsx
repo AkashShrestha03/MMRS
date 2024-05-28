@@ -22,7 +22,7 @@ const Header = () => {
                   </button>
                 </div>
 
-                <Link to={"/"} onClick={() => setOpenNav(false)}>
+                <Link to={"/"}  onClick={() => setOpenNav(false)}>
                   <div className="logo"></div>
                 </Link>
                 <div className="tp-main-menu-mobile d-xl-none  ">
