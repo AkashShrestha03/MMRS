@@ -11,7 +11,7 @@
   height:110px;
   width: 110px;
   background-position: center;
-  border-radius: 50%;
+  border: none;
 }
 
 .tp-slider-5-bg{
