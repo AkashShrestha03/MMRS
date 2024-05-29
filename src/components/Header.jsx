@@ -12,7 +12,7 @@ const Header = () => {
         <>
           <div className="tpoffcanvas-area   ">
             <ReactWOW animation="fadeInRight" duration="0.6s">
-              <div className="tpoffcanvas ">
+              <div className="tpoffcanvas" >
                 <div className="tpoffcanvas__close-btn">
                   <button
                     className="close-btn"
@@ -23,7 +23,7 @@ const Header = () => {
                 </div>
 
                 <Link to={"/"}  onClick={() => setOpenNav(false)}>
-                  <div className="logo" style={{border: "none"}}></div>
+                  <div className="logo" ></div>
                 </Link>
                 <div className="tp-main-menu-mobile d-xl-none  ">
                   <ul>
