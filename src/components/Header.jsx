@@ -23,7 +23,7 @@ const Header = () => {
                 </div>
 
                 <Link to={"/"}  onClick={() => setOpenNav(false)}>
-                  <div className="logo"></div>
+                  <div className="logo" style={{border: "none"}}></div>
                 </Link>
                 <div className="tp-main-menu-mobile d-xl-none  ">
                   <ul>
