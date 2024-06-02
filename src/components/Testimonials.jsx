@@ -430,7 +430,7 @@ const Testimonials = () => {
                       >
                         <span className="tp-testimonial-tab-btn">
                           <img
-                            src="../img/brand/P.png"
+                            src="../img/brand/Robust.png"
                             alt="client"
                           />
                         </span>
