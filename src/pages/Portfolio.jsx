@@ -51,9 +51,9 @@ const Portfolio = () => {
         </section>
 
         <section className="tp-portfolio-area pt-120 pb-90">
-          <div className="container-fluid ">
+          <div className="container-fluid">
             <div className="row">
-              <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+              <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                 <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                   <div className="tp-project-3-slide-wrapper mb-30  ">
                     <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">
@@ -68,7 +68,7 @@ const Portfolio = () => {
                   </div>
                 </ReactWOW>
               </div>
-              <div className="col-xl-3 col-lg-6 col-md-6">
+              <div className="col-xl-4 col-lg-6 col-md-6">
                 <ReactWOW animation="fadeInUp" delay="0.5s" duration="1s">
                   <div className="tp-project-3-slide-wrapper mb-30 ">
                     <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">
@@ -82,7 +82,7 @@ const Portfolio = () => {
                   </div>
                 </ReactWOW>
               </div>
-              <div className="col-xl-3 col-lg-6 col-md-6">
+              <div className="col-xl-4 col-lg-6 col-md-6">
                 <ReactWOW animation="fadeInUp" delay="0.7s" duration="1s">
                   <div className="tp-project-3-slide-wrapper mb-30 ">
                     <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">
@@ -96,7 +96,7 @@ const Portfolio = () => {
                   </div>
                 </ReactWOW>
               </div>
-              <div className="col-xl-3 col-lg-6 col-md-6">
+              <div className="col-xl-4 col-lg-6 col-md-6">
                 <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                   <div className="tp-project-3-slide-wrapper mb-30  ">
                     <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">
@@ -111,7 +111,7 @@ const Portfolio = () => {
                   </div>
                 </ReactWOW>
               </div>
-              <div className="col-xl-3 col-lg-6 col-md-6">
+              <div className="col-xl-4 col-lg-6 col-md-6">
                 <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                   <div className="tp-project-3-slide-wrapper mb-30  ">
                     <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">
@@ -126,7 +126,7 @@ const Portfolio = () => {
                   </div>
                 </ReactWOW>
               </div>
-              <div className="col-xl-3 col-lg-6 col-md-6">
+              <div className="col-xl-4 col-lg-6 col-md-6">
                 <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                   <div className="tp-project-3-slide-wrapper mb-30  ">
                     <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">
@@ -141,7 +141,7 @@ const Portfolio = () => {
                   </div>
                 </ReactWOW>
               </div>
-              <div className="col-xl-3 col-lg-6 col-md-6">
+              <div className="col-xl-4 col-lg-6 col-md-6">
                 <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                   <div className="tp-project-3-slide-wrapper mb-30  ">
                     <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">
@@ -157,7 +157,7 @@ const Portfolio = () => {
                 </ReactWOW>
               </div>
 
-              <div className="col-xl-3 col-lg-6 col-md-6">
+              <div className="col-xl-4 col-lg-6 col-md-6">
                 <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                   <div className="tp-project-3-slide-wrapper mb-30  ">
                     <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">
@@ -172,7 +172,7 @@ const Portfolio = () => {
                   </div>
                 </ReactWOW>
               </div>
-              <div className="col-xl-3 col-lg-6 col-md-6">
+              <div className="col-xl-4 col-lg-6 col-md-6">
                 <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                   <div className="tp-project-3-slide-wrapper mb-30  ">
                     <div className="tp-project-3-thumb tp-project-3-thumb-inner p-relative">

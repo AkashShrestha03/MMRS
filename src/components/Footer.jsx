@@ -38,7 +38,7 @@ const Footer = () => {
                       <i className="flaticon-instagram"></i>
                     </Link>
 
-                    <Link to={"/"}>
+                    <Link to={"https://wa.me/message/J4BMFHXTGKQLL1"}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"

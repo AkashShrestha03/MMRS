@@ -71,13 +71,13 @@ const Partners = () => {
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-3">
+              {/* <div className="col col-lg-3">
                 <div className="tp-brand-5-wrapper">
                   <div className="tp-brand-5-thumb">
                     <img src="../img/brand/Cine-Compass.jpg" alt="" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </ReactWOW>
         </div>
