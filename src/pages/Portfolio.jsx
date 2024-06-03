@@ -51,7 +51,7 @@ const Portfolio = () => {
         </section>
 
         <section className="tp-portfolio-area pt-120 pb-90">
-          <div className="container-fluid">
+          <div className="container">
             <div className="row">
               <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                 <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
