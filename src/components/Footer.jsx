@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <section className="tp-footer-area">
       <div className="tp-footer-top pt-110 pb-55">
-        <div className="container">
+        <div className="container ">
           <div className="row">
-            <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
+            <div className="col-xl-3  col-lg-3 col-md-6 col-sm-6 mb-30">
               <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                 <div className="tp-footer-widget footer-cols-1 transition-3 ">
                   <div className="tp-footer-logo">
@@ -148,11 +148,11 @@ const Footer = () => {
               </ReactWOW>
             </div>
             <div className="col-xl-4 col-lg-3 col-md-6 col-sm-6 mb-50">
-              <ReactWOW animation="fadeInUp" delay="0.9s" duration="1s">
+              {/* <ReactWOW animation="fadeInUp" delay="0.9s" duration="1s">
                 <div className="tp-footer-widget footer-cols-4 tp-footer-widget-cutm-pdg transition-3">
                   <div className="tp-footer-thumb-wrap">
                     <p className="tp-footer-parag">
-                      Get Special Offers. We Never Spam.
+                      Get in touch with us.
                     </p>
                     <div className="tp-footer-widget-content-input">
                       <form className="tp-footer-form">
@@ -168,13 +168,20 @@ const Footer = () => {
                           type="submit"
                           className="tp-footer-subscribe-btn w-100"
                         >
-                          Subscribe Now
+                          Contact Now
                         </button>
                       </form>
                     </div>
                   </div>
                 </div>
-              </ReactWOW>
+              </ReactWOW> */}
+              <div class="tp-footer-5-bg-shape ">
+                <img
+                  class="tp-footer-5-bg-shape1 "
+                  src="../img/footer/footer_img.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
