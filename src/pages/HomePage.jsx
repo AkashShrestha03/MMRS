@@ -358,7 +358,7 @@ const HomePage = () => {
               <ReactWOW animation="fadeInUp">
                 <div className="tp-chose-us-5-wrapper text-center">
                   <h2 className="tp-chose-us-5-title">
-                    Do you have any projects? <br />
+                    Do you have any ideas? <br />
                     Contact us.
                   </h2>
                   <div className="tp-chose-us-5-btn">

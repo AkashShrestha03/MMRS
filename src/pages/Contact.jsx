@@ -36,7 +36,7 @@ const Contact = () => {
                 >
                   <div className="tp-contact-box tp-contact-inner-page-box mb-120">
                     <h3 className="tp-contact-title tp-contact-title-inner-page wow fadeInUp">
-                      Send your message
+                      Send Your Message
                     </h3>
                     <div className="tp-contact-form tp-contact-form-inner-page wow fadeInUp">
                       <div className="row">
