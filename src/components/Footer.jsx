@@ -178,8 +178,9 @@ const Footer = () => {
               <div class="tp-footer-5-bg-shape ">
                 <img
                   class="tp-footer-5-bg-shape1 "
-                  src="../img/footer/footer_img.png"
+                  src="../img/footer/Online.gif"
                   alt=""
+
                 />
               </div>
             </div>

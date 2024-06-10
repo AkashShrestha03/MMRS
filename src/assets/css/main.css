@@ -21473,7 +21473,7 @@ label {
   object-fit: cover;
   object-position: 0;
   width: 100%;
-
+  aspect-ratio: 3 / 2;
   bottom: 55px;
 }
 .tp-footer-5-bg-shape2 {
