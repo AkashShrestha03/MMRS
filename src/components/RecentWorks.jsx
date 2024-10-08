@@ -20,9 +20,9 @@ const RecentWorks = () => {
                 </div>
               </ReactWOW>
             </div>
-            <div className="col-xl-6 col-lg-4 col-md-4">
+            <div className="col-xl-6 col-lg-6 col-md-4">
               <ReactWOW animation="fadeInUp">
-                <div className="tp-project-5-top-btn d-flex justify-content-end mt-100 wow fadeInUp">
+                <div className="tp-project-5-top-btn d-flex justify-content-end mt-100  ">
                   <Link
                     className="tp-btn"
                     onClick={() =>
@@ -44,7 +44,7 @@ const RecentWorks = () => {
       </div>
       <div className="tp-project-5-bottom">
         <div className="container-fluid tp-project-5-width">
-          <div className="row">
+          <div className="row gx-5">
             <div className="col-xl-3 col-lg-6 col-md-6">
               <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                 <div

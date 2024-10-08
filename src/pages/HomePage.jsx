@@ -4,7 +4,6 @@ import RecentWorks from "../components/RecentWorks";
 import Testimonials from "../components/Testimonials";
 //Animation
 import ReactWOW from "react-wow";
-import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import Preloader from "../components/Preloader";
 
@@ -24,55 +23,43 @@ const HomePage = () => {
             <div className="container">
               <div className="row align-items-end">
                 <div className="col-xl-6 col-lg-6">
-                  <motion.div
-                    animate={{ y: -20 }}
-                    transition={{
-                      ease: "linear",
-                      duration: 1,
-                      x: { duration: 1 },
-                    }}
-                    className="tp-slider-5-content p-relative z-index-11"
-                  >
-                    <div
-                      animate={{ y: -20 }}
-                      transition={{
-                        type: "spring",
-                        ease: "linear",
-                        duration: 1,
-                        x: { duration: 3 },
-                      }}
-                      className="tp-slider-5-title-box mb-50 wow fadeInUp"
-                      data-wow-delay=".3s"
-                      data-wow-duration="1s"
-                    >
-                      <span className="tp-slider-sub-title tp-slider-sub-title-5">
-                        Where affordability meets quality
-                      </span>
-                      <h1 className="tp-slider-title tp-slider-title-5 pt-5 mt-4">
-                        Your Partner <br />
-                        In
-                        <span className="ms-4">Growth </span>
-                        <br />
-                        And Scale
-                      </h1>
-                      <p className="tp-slider-5-paragraph">
-                        Elevating Individuals And Businesses Through Technology
-                        <br /> And Strategy.
-                      </p>
-                    </div>
-                    <div className="tp-slider-5-btn-box d-inline-flex">
-                      <a
-                        className="tp-btn"
-                        onClick={() =>
-                          targetRef.current?.scrollIntoView({
-                            behavior: "smooth",
-                          })
-                        }
+                    <div className="tp-slider-5-content p-relative z-index-11">
+                  <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
+                      <div
+                       
+                        className="tp-slider-5-title-box mb-50"
+                    
                       >
-                        <span>Get Started</span>
-                      </a>
+                        <span className="tp-slider-sub-title tp-slider-sub-title-5">
+                          Where affordability meets quality
+                        </span>
+                        <h1 className="tp-slider-title tp-slider-title-5 pt-5 mt-4">
+                          Your Partner <br />
+                          In
+                          <span className="ms-4">Growth </span>
+                          <br />
+                          And Scale
+                        </h1>
+                        <p className="tp-slider-5-paragraph">
+                          Elevating Individuals And Businesses Through
+                          Technology
+                          <br /> And Strategy.
+                        </p>
+                      </div>
+                      <div className="tp-slider-5-btn-box d-inline-flex">
+                        <a
+                          className="tp-btn"
+                          onClick={() =>
+                            targetRef.current?.scrollIntoView({
+                              behavior: "smooth",
+                            })
+                          }
+                        >
+                          <span>Get Started</span>
+                        </a>
+                      </div>
+                  </ReactWOW>
                     </div>
-                  </motion.div>
                 </div>
                 <div className="col-xl-6 col-lg-6">
                   <div className="tp-slider-5-thumb p-relative z-index-1">
@@ -177,12 +164,8 @@ const HomePage = () => {
                 </ReactWOW>
               </div>
               <div className="col-lg-6 col-md-6 ">
-                <ReactWOW animation="fadeInUp" delay="0.9s" duration="1ss">
-                  <div
-                    className="tp-service-5-wrapper mb-30 "
-                    data-wow-delay=".9s"
-                    data-wow-duration="1s"
-                  >
+                <ReactWOW animation="fadeInUp" delay="0.9s" duration="1s">
+                  <div className="tp-service-5-wrapper mb-30 ">
                     <div className="tp-service-5-item d-flex service-containers">
                       <div className="tp-service-5-thumb">
                         <img src="../img/service/service-5-img4.png" alt="" />
@@ -375,7 +358,7 @@ const HomePage = () => {
               <ReactWOW animation="fadeInUp">
                 <div className="tp-chose-us-5-wrapper text-center">
                   <h2 className="tp-chose-us-5-title">
-                    Do you have any projects? <br />
+                    Do you have any ideas? <br />
                     Contact us.
                   </h2>
                   <div className="tp-chose-us-5-btn">

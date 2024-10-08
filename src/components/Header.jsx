@@ -12,19 +12,18 @@ const Header = () => {
         <>
           <div className="tpoffcanvas-area   ">
             <ReactWOW animation="fadeInRight" duration="0.6s">
-              <div className="tpoffcanvas ">
-               
-                  <div className="tpoffcanvas__close-btn">
-                    <button
-                      className="close-btn"
-                      onClick={() => setOpenNav(false)}
-                    >
-                      <i className="fal fa-times"></i>
-                    </button>
-                  </div>
-               
+              <div className="tpoffcanvas">
+                <div className="tpoffcanvas__close-btn">
+                  <button
+                    className="close-btn"
+                    onClick={() => setOpenNav(false)}
+                  >
+                    <i className="fal fa-times"></i>
+                  </button>
+                </div>
+
                 <Link to={"/"} onClick={() => setOpenNav(false)}>
-                  <div className="logo"></div>
+                  <div className="logo "/>
                 </Link>
                 <div className="tp-main-menu-mobile d-xl-none  ">
                   <ul>
@@ -124,13 +123,13 @@ const Header = () => {
 
                 <div className="tpoffcanvas__social">
                   <div className="social-icon">
-                    <a href="#">
+                    <a href="https://www.facebook.com/profile.php?id=100092450942528&mibextid=ZbWKwL">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/devloop_pvt_ltd?igsh=MW4zOHY2bHU2cnR4Nw==">
                       <i className="fab fa-instagram"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://wa.me/message/J4BMFHXTGKQLL1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -155,7 +154,10 @@ const Header = () => {
           <div className="tp-header-area">
             <div className="container-fluid">
               <div className="row align-items-center">
-                <div className="col-xl-2 col-lg-4 col-md-4 col-6">
+                <div
+                  className="col-xl-2 col-lg-4 col-md-4 col-6"
+                  style={{ border: "none" }}
+                >
                   <Link to={"/"}>
                     <div className="logo"></div>
                   </Link>

@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <section className="tp-footer-area">
       <div className="tp-footer-top pt-110 pb-55">
-        <div className="container">
+        <div className="container ">
           <div className="row">
-            <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
+            <div className="col-xl-3  col-lg-3 col-md-6 col-sm-6 mb-30">
               <ReactWOW animation="fadeInUp" delay="0.3s" duration="1s">
                 <div className="tp-footer-widget footer-cols-1 transition-3 ">
                   <div className="tp-footer-logo">
@@ -23,14 +23,22 @@ const Footer = () => {
                     <p>sales@mmrsolutions.co.in</p>
                   </div>
                   <div className="tp-footer-social">
-                    <Link to={"/"}>
+                    <Link
+                      to={
+                        "https://www.facebook.com/profile.php?id=100092450942528&mibextid=ZbWKwL"
+                      }
+                    >
                       <i className="flaticon-facebook-circular-logo"></i>
                     </Link>
-                    <Link to={"/"}>
+                    <Link
+                      to={
+                        "https://www.instagram.com/devloop_pvt_ltd?igsh=MW4zOHY2bHU2cnR4Nw=="
+                      }
+                    >
                       <i className="flaticon-instagram"></i>
                     </Link>
 
-                    <Link to={"/"}>
+                    <Link to={"https://wa.me/message/J4BMFHXTGKQLL1"}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -140,16 +148,14 @@ const Footer = () => {
               </ReactWOW>
             </div>
             <div className="col-xl-4 col-lg-3 col-md-6 col-sm-6 mb-50">
-              <ReactWOW animation="fadeInUp" delay="0.9s" duration="1s">
+              {/* <ReactWOW animation="fadeInUp" delay="0.9s" duration="1s">
                 <div className="tp-footer-widget footer-cols-4 tp-footer-widget-cutm-pdg transition-3">
                   <div className="tp-footer-thumb-wrap">
                     <p className="tp-footer-parag">
-                      Get Special Offers. We Never Spam.
+                      Get in touch with us.
                     </p>
                     <div className="tp-footer-widget-content-input">
-                      <form
-                        className="tp-footer-form"
-                      >
+                      <form className="tp-footer-form">
                         <input
                           type="email"
                           className="w-100"
@@ -162,13 +168,21 @@ const Footer = () => {
                           type="submit"
                           className="tp-footer-subscribe-btn w-100"
                         >
-                          Subscribe Now
+                          Contact Now
                         </button>
                       </form>
                     </div>
                   </div>
                 </div>
-              </ReactWOW>
+              </ReactWOW> */}
+              <div class="tp-footer-5-bg-shape ">
+                <img
+                  class="tp-footer-5-bg-shape1 "
+                  src="../img/footer/Online.gif"
+                  alt=""
+
+                />
+              </div>
             </div>
           </div>
         </div>

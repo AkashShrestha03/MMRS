@@ -16,7 +16,7 @@ setTimeout(() => setFade(false), 1000);
           <div className="loder-section left-section"></div>
           <div className="loder-section right-section"></div>
           <div className="loader-brand-icon">
-            <img src="../img/logo/MMR-logo.jpg" alt="" />
+            <img src="../img/logo/MMR-logo.png" alt="" />
           </div>
         </div>
      

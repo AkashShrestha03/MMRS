@@ -6,13 +6,26 @@
 
 
 .logo{
-  background-image: url("../public/img/logo/MMR-logo.jpg") !important;
+  background-image: url("../public/img/logo/MMR-logo.png") ;
+  background-color:  var(--tp-common-white);
   background-size: cover;
-  height: 70px;
-  width: 70px;
-  background-position: center;
   border-radius: 50%;
+  height:110px;
+  width: 110px;
+  background-position: center;
+  border: none;
+  outline: none;
 }
+
+
+/* Offcanvas navbar */
+
+@media screen and (min-width: 1199px) {
+  .tpoffcanvas-area{
+    display: none;
+  }
+}
+
 
 .tp-slider-5-bg{
   background-image: url("../public/img/slider//slider-5-bg-1.png");
@@ -58,14 +71,16 @@
 }
 
 .tp-project-5-thumb img{
-  height: 250px;
-  width: 356px;
   
+  height: 250px;
+ 
   aspect-ratio: 3 / 2;
 }
 .tp-project-5-thumb{
+
   height: 250px;
-  width: 356px;
+  width: 310px;
+ 
 }
 .tp-project-3-slide-wrapper{
   margin-right: 10px;
@@ -131,6 +146,7 @@
 .loader-brand-icon img{
   height: 99px;
   width: 99px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -162,8 +178,22 @@
 /* About */
 
 .tp-brand-5-thumb img{
-  aspect-ratio: 4 /2;
+  aspect-ratio: 3 /2;
   width: 70%;
+}
 
+@media screen and (max-width: 457px) {
+  .tp-brand-5-top-width{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 757px) {
+  .tp-brand-5-top-width{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
